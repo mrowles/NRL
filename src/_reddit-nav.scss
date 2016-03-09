@@ -1,0 +1,93 @@
+// scss-lint:disable SelectorFormat IdSelector
+
+/* Subreddit shortcuts at the top of the page */
+#RESShortcutsEditContainer,
+#RESShortcutsAdd,
+#RESShortcutsLeft,
+#RESShortcutsRight,
+#RESShortcutsSort {
+  background-color: $color-grey-dark-2 !important;
+  color: $color-white-1 !important;
+}
+
+#sr-header-area {
+  border-bottom: 1px solid $color-black-1 !important;
+  background-color: $color-grey-dark-2 !important;
+  color: $color-white-1 !important;
+
+  a {
+    color: $color-grey-light-2 !important;
+    font-weight: bold !important;
+
+    &:hover {
+      color: $color-grey-light-5 !important;
+      font-weight: bold !important;
+    }
+  }
+
+  .separator {
+    color: $color-white-1 !important;
+    font-weight: bold !important;
+  }
+
+  .selected a {
+    color: $color-white-1 !important;
+    font-weight: bold !important;
+
+    &:hover {
+      color: $color-white-1;
+      font-weight: bold !important;
+    }
+
+    &:visited {
+      color: $color-white-1;
+      font-weight: bold !important;
+    }
+  }
+
+  .RESShortcutsCurrentSub,
+  .RESShortcutsCurrentSub:hover,
+  .RESShortcutsCurrentSub:visited {
+    color: $color-white-1 !important;
+  }
+
+  .srdrop {
+    color: $color-green-1;
+    font-weight: bold !important;
+
+    span {
+      background-color: $color-grey-dark-2 !important;
+    }
+  }
+
+  .width-clip {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+
+    a.choice {
+      background-color: $color-grey-dark-2 !important;
+      color: $color-grey-light-2 !important;
+
+      &:hover {
+        background-color: $color-grey-mid-3 !important;
+        color: $color-grey-light-5 !important;
+      }
+
+    }
+  }
+
+  #sr-more-link {
+    background-color: $color-grey-dark-2 !important;
+    color: $color-white-1 !important;
+  }
+
+  .dropdown {
+    &.srdrop {
+      .selected {
+        color: $color-white-1 !important;
+      }
+    }
+  }
+}
+// scss-lint:enable SelectorFormat IdSelector

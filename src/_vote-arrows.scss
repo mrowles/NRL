@@ -1,0 +1,70 @@
+/* Up and Downvotes */
+.arrow {
+  width: 15px;
+  height: 14px;
+  background-image: url(%%arrows-2%%) !important;
+
+  .upmod {
+    background-position: -15px 0;
+  }
+
+  .downmod {
+    background-position: -15px -14px;
+  }
+
+  &.up {
+    &:hover {
+      background-position: 0 0;
+    }
+  }
+
+  &.down {
+    &:hover {
+      background-position: 0 -14px;
+    }
+  }
+
+}
+
+// scss-lint:disable SelectorFormat
+.res_comment_ups,
+.res_post_ups {
+  color: $color-yellow-3 !important;
+}
+
+.res_comment_downs,
+.res_post_downs {
+  color: $color-blue-4 !important;
+}
+
+.res_comment_downs,
+.res_comment_ups {
+  font-weight: normal !important;
+}
+// scss-lint:enable SelectorFormat
+
+.link .score.likes {
+  color: $color-yellow-3 !important;
+}
+
+.link .score.dislikes {
+  color: $color-blue-4 !important;
+}
+
+/* Downvote Hover */
+.comment .arrow.down:hover::before {
+  display: block;
+  position: absolute;
+  width: 200px;
+  margin-top: 5px;
+  margin-left: 25px;
+  padding: 5px;
+  border: 2px solid $color-green-2;
+  background-color: $color-white-4;
+  color: $color-green-2;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  content: 'Reserve downvotes for comments that do not add to discussion. If you disagree with a post, comment rather than downvote.';
+  z-index: 1000;
+}

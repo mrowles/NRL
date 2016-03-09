@@ -1,0 +1,55 @@
+// scss-lint:disable IdSelector SelectorFormat ColorVariable
+
+/* Userbar */
+#userbarToggle.userbarHide,
+#userbarToggle.userbarShow {
+  margin-top: -3px;
+  border: 0;
+  background: none;
+  color: $color-green-3;
+
+  a {
+    border: 0;
+    background: none;
+    color: $color-white-1;
+  }
+}
+
+#header-bottom-right {
+  position: absolute;
+  right: 20px;
+  bottom: 51px;
+  border: 1px solid $color-green-2 !important;
+  background-image: url(%%table-header%%);
+
+  a {
+    color: $color-white-1;
+  }
+
+  .res-navTop {
+    margin-top: 6px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 87, 43, 0.5) !important;
+    color: $color-green-3;
+
+    a {
+      border: 0;
+      background: none;
+      color: $color-white-1;
+    }
+
+  }
+
+}
+
+.user {
+  color: $color-white-1;
+}
+
+#RESMainGearOverlay.RESGearOverlay,
+#RESSettingsButton.gearIcon {
+  margin-top: -3px;
+}
+
+// scss-lint:enable IdSelector SelectorFormat ColorVariable

@@ -1,0 +1,1920 @@
+/* Default CSS for a crest */
+.flair {
+  display: inline-block;
+  width: 32px;
+  height: 20px;
+  margin-right: 3px;
+  padding: 2px;
+  border-width: 0;
+  border-radius: 3px;
+  background-color: transparent;
+  color: $color-grey-dark-1;
+  font-size: inherit;
+  line-height: 16px;
+  overflow: hidden;
+  vertical-align: middle;
+
+  &::before {
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+    margin-right: 4px;
+    background-image: url(%%flair%%);
+    background-repeat: no-repeat;
+    content: '';
+    vertical-align: top;
+  }
+}
+
+.collapsed .flair {
+  opacity: 0.4;
+}
+
+* + html .commentarea .flair, /* IE7 */
+.commentarea .flair:hover {
+  width: auto;
+  padding: 1px 1ex 1px 1px;
+  border-width: 1px;
+  background-color: $color-white-1;
+  cursor: help;
+}
+
+* + html .commentarea .flair {
+  /* IE7 */
+  height: auto;
+  padding: 2px;
+  line-height: normal;
+  cursor: pointer;
+}
+
+/* Club crests */
+.flair-nrl {
+  width: 16px;
+  height: 20px;
+
+  &::before {
+    width: 16px;
+    height: 20px;
+    background-position: 0 -620px;
+  }
+}
+
+.flair-brisbane-broncos {
+  width: 32px;
+  height: 20px;
+
+  &::before {
+    width: 32px;
+    height: 20px;
+    background-position: 0 0;
+  }
+}
+
+.flair-canterbury-bankstown-bulldogs {
+  width: 15px;
+  height: 20px;
+
+  &::before {
+    width: 15px;
+    height: 20px;
+    background-position: 0 -20px;
+  }
+}
+
+.flair-north-queensland-cowboys {
+  width: 32px;
+  height: 20px;
+
+  &::before {
+    width: 32px;
+    height: 20px;
+    background-position: 0 -40px;
+  }
+}
+
+.flair-st-george-illawarra-dragons {
+  width: 15px;
+  height: 20px;
+
+  &::before {
+    width: 15px;
+    height: 20px;
+    background-position: 0 -60px;
+  }
+}
+
+.flair-parramatta-eels {
+  width: 20px;
+  height: 20px;
+
+  &::before {
+    width: 20px;
+    height: 20px;
+    background-position: 0 -80px;
+  }
+}
+
+.flair-newcastle-knights {
+  width: 18px;
+  height: 20px;
+
+  &::before {
+    width: 18px;
+    height: 20px;
+    background-position: 0 -100px;
+  }
+}
+
+.flair-penrith-panthers {
+  width: 31px;
+  height: 20px;
+
+  &::before {
+    width: 31px;
+    height: 20px;
+    background-position: 0 -120px;
+  }
+}
+
+.flair-south-sydney-rabbitohs {
+  width: 26px;
+  height: 20px;
+
+  &::before {
+    width: 26px;
+    height: 20px;
+    background-position: 0 -140px;
+  }
+}
+
+.flair-canberra-raiders {
+  width: 25px;
+  height: 20px;
+
+  &::before {
+    width: 25px;
+    height: 20px;
+    background-position: 0 -160px;
+  }
+}
+
+.flair-sydney-roosters {
+  width: 20px;
+  height: 20px;
+
+  &::before {
+    width: 20px;
+    height: 20px;
+    background-position: 0 -180px;
+  }
+}
+
+.flair-manly-warringah-sea-eagles {
+  width: 22px;
+  height: 20px;
+
+  &::before {
+    width: 22px;
+    height: 20px;
+    background-position: 0 -200px;
+  }
+}
+
+.flair-cronulla-sutherland-sharks {
+  width: 27px;
+  height: 20px;
+
+  &::before {
+    width: 27px;
+    height: 20px;
+    background-position: 0 -220px;
+  }
+}
+
+.flair-melbourne-storm {
+  width: 19px;
+  height: 20px;
+
+  &::before {
+    width: 19px;
+    height: 20px;
+    background-position: 0 -240px;
+  }
+}
+
+.flair-wests-tigers {
+  width: 26px;
+  height: 20px;
+
+  &::before {
+    width: 26px;
+    height: 20px;
+    background-position: 0 -260px;
+  }
+}
+
+.flair-gold-coast-titans {
+  width: 25px;
+  height: 20px;
+
+  &::before {
+    width: 25px;
+    height: 20px;
+    background-position: 0 -280px;
+  }
+}
+
+.flair-new-zealand-warriors {
+  width: 21px;
+  height: 20px;
+
+  &::before {
+    width: 21px;
+    height: 20px;
+    background-position: 0 -300px;
+  }
+}
+
+.flair-nsw-blues {
+  width: 16px;
+  height: 20px;
+
+  &::before {
+    width: 16px;
+    height: 20px;
+    background-position: 0 -420px;
+  }
+}
+
+.flair-qld-maroons {
+  width: 33px;
+  height: 20px;
+
+  &::before {
+    width: 33px;
+    height: 20px;
+    background-position: -128px -420px;
+  }
+}
+
+.flair-victoria {
+  width: 16px;
+  height: 20px;
+
+  &::before {
+    width: 16px;
+    height: 20px;
+    background-position: 0 -460px;
+  }
+}
+
+.flair-west-aus {
+  width: 16px;
+  height: 20px;
+
+  &::before {
+    width: 16px;
+    height: 20px;
+    background-position: -32px -460px;
+  }
+}
+
+.flair-south-aus {
+  width: 16px;
+  height: 20px;
+
+  &::before {
+    width: 16px;
+    height: 20px;
+    background-position: -64px -460px;
+  }
+}
+
+.flair-northern-territory {
+  width: 16px;
+  height: 20px;
+
+  &::before {
+    width: 16px;
+    height: 20px;
+    background-position: -96px -460px;
+  }
+}
+
+.flair-tasmania {
+  width: 16px;
+  height: 20px;
+
+  &::before {
+    width: 16px;
+    height: 20px;
+    background-position: -128px -460px;
+  }
+}
+
+.flair-brisbane-broncos-rect::before {
+  background-position: -32px 0;
+}
+
+.flair-canterbury-bankstown-bulldogs-rect::before {
+  background-position: -32px -20px;
+}
+
+.flair-north-queensland-cowboys-rect::before {
+  background-position: -32px -40px;
+}
+
+.flair-st-george-illawarra-dragons-rect::before {
+  background-position: -32px -60px;
+}
+
+.flair-parramatta-eels-rect::before {
+  background-position: -32px -80px;
+}
+
+.flair-newcastle-knights-rect::before {
+  background-position: -32px -100px;
+}
+
+.flair-penrith-panthers-rect::before {
+  background-position: -32px -120px;
+}
+
+.flair-south-sydney-rabbitohs-rect::before {
+  background-position: -32px -140px;
+}
+
+.flair-canberra-raiders-rect::before {
+  background-position: -32px -160px;
+}
+
+.flair-sydney-roosters-rect::before {
+  background-position: -32px -180px;
+}
+
+.flair-manly-warringah-sea-eagles-rect::before {
+  background-position: -32px -200px;
+}
+
+.flair-cronulla-sutherland-sharks-rect::before {
+  background-position: -32px -220px;
+}
+
+.flair-melbourne-storm-rect::before {
+  background-position: -32px -240px;
+}
+
+.flair-wests-tigers-rect::before {
+  background-position: -32px -260px;
+}
+
+.flair-gold-coast-titans-rect::before {
+  background-position: -32px -280px;
+}
+
+.flair-new-zealand-warriors-rect::before {
+  background-position: -32px -300px;
+}
+
+.flair-nsw-blues-rect::before {
+  background-position: -32px -420px;
+}
+
+.flair-qld-maroons-rect {
+  width: 49px;
+  height: 20px;
+}
+
+.flair-qld-maroons-rect::before {
+  width: 49px;
+  height: 20px;
+  background-position: -128px -440px;
+}
+
+.flair-brisbane-broncos-jersey::before {
+  background-position: -64px 0;
+}
+
+.flair-canterbury-bankstown-bulldogs-jersey::before {
+  background-position: -64px -20px;
+}
+
+.flair-north-queensland-cowboys-jersey::before {
+  background-position: -64px -40px;
+}
+
+.flair-st-george-illawarra-dragons-jersey::before {
+  background-position: -64px -60px;
+}
+
+.flair-parramatta-eels-jersey::before {
+  background-position: -64px -80px;
+}
+
+.flair-newcastle-knights-jersey::before {
+  background-position: -64px -100px;
+}
+
+.flair-penrith-panthers-jersey::before {
+  background-position: -64px -120px;
+}
+
+.flair-south-sydney-rabbitohs-jersey::before {
+  background-position: -64px -140px;
+}
+
+.flair-canberra-raiders-jersey::before {
+  background-position: -64px -160px;
+}
+
+.flair-sydney-roosters-jersey::before {
+  background-position: -64px -180px;
+}
+
+.flair-manly-warringah-sea-eagles-jersey::before {
+  background-position: -64px -200px;
+}
+
+.flair-cronulla-sutherland-sharks-jersey::before {
+  background-position: -64px -220px;
+}
+
+.flair-melbourne-storm-jersey::before {
+  background-position: -64px -240px;
+}
+
+.flair-wests-tigers-jersey::before {
+  background-position: -64px -260px;
+}
+
+.flair-gold-coast-titans-jersey::before {
+  background-position: -64px -280px;
+}
+
+.flair-new-zealand-warriors-jersey::before {
+  background-position: -64px -300px;
+}
+
+.flair-brisbane-broncos-retro {
+  width: 32px;
+  height: 20px;
+}
+
+.flair-brisbane-broncos-retro::before {
+  width: 32px;
+  height: 20px;
+  background-position: -96px 0;
+}
+
+.flair-canterbury-bankstown-bulldogs-retro {
+  width: 20px;
+  height: 20px;
+}
+
+.flair-canterbury-bankstown-bulldogs-retro::before {
+  width: 20px;
+  height: 20px;
+  background-position: -96px -20px;
+}
+
+.flair-canterbury-bankstown-bulldogs-retro-2 {
+  width: 15px;
+  height: 20px;
+}
+
+.flair-canterbury-bankstown-bulldogs-retro-2::before {
+  width: 15px;
+  height: 20px;
+  background-position: -128px -20px;
+}
+
+.flair-canterbury-bankstown-bulldogs-retro-3 {
+  width: 28px;
+  height: 20px;
+}
+
+.flair-canterbury-bankstown-bulldogs-retro-3::before {
+  width: 28px;
+  height: 20px;
+  background-position: -160px -20px;
+}
+
+.flair-north-queensland-cowboys-retro {
+  width: 32px;
+  height: 20px;
+}
+
+.flair-north-queensland-cowboys-retro::before {
+  width: 32px;
+  height: 20px;
+  background-position: -96px -40px;
+}
+
+.flair-st-george-illawarra-dragons-retro {
+  width: 15px;
+  height: 20px;
+}
+
+.flair-st-george-illawarra-dragons-retro::before {
+  width: 15px;
+  height: 20px;
+  background-position: -96px -60px;
+}
+
+.flair-st-george-illawarra-dragons-retro-2 {
+  width: 20px;
+  height: 20px;
+}
+
+.flair-st-george-illawarra-dragons-retro-2::before {
+  width: 20px;
+  height: 20px;
+  background-position: -128px -60px;
+}
+
+.flair-parramatta-eels-retro {
+  width: 29px;
+  height: 20px;
+}
+
+.flair-parramatta-eels-retro::before {
+  width: 29px;
+  height: 20px;
+  background-position: -96px -80px;
+}
+
+.flair-parramatta-eels-retro-2 {
+  width: 32px;
+  height: 20px;
+}
+
+.flair-parramatta-eels-retro-2::before {
+  width: 32px;
+  height: 20px;
+  background-position: -128px -80px;
+}
+
+.flair-newcastle-knights-retro {
+  width: 17px;
+  height: 20px;
+}
+
+.flair-newcastle-knights-retro::before {
+  width: 17px;
+  height: 20px;
+  background-position: -96px -100px;
+}
+
+.flair-penrith-panthers-retro {
+  width: 21px;
+  height: 20px;
+}
+
+.flair-penrith-panthers-retro::before {
+  width: 21px;
+  height: 20px;
+  background-position: -96px -120px;
+}
+
+.flair-penrith-panthers-retro-2 {
+  width: 21px;
+  height: 20px;
+}
+
+.flair-penrith-panthers-retro-2::before {
+  width: 21px;
+  height: 20px;
+  background-position: -128px -120px;
+}
+
+.flair-penrith-panthers-retro-3 {
+  width: 18px;
+  height: 20px;
+}
+
+.flair-penrith-panthers-retro-3::before {
+  width: 18px;
+  height: 20px;
+  background-position: -160px -120px;
+}
+
+.flair-south-sydney-rabbitohs-retro {
+  width: 29px;
+  height: 20px;
+}
+
+.flair-south-sydney-rabbitohs-retro::before {
+  width: 29px;
+  height: 20px;
+  background-position: -96px -140px;
+}
+
+.flair-canberra-raiders-retro {
+  width: 20px;
+  height: 20px;
+}
+
+.flair-canberra-raiders-retro::before {
+  width: 20px;
+  height: 20px;
+  background-position: -96px -160px;
+}
+
+.flair-sydney-roosters-retro {
+  width: 16px;
+  height: 20px;
+}
+
+.flair-sydney-roosters-retro::before {
+  width: 16px;
+  height: 20px;
+  background-position: -96px -180px;
+}
+
+.flair-sydney-roosters-retro-2 {
+  width: 13px;
+  height: 20px;
+}
+
+.flair-sydney-roosters-retro-2::before {
+  width: 13px;
+  height: 20px;
+  background-position: -128px -180px;
+}
+
+.flair-sydney-roosters-retro-3 {
+  width: 17px;
+  height: 20px;
+}
+
+.flair-sydney-roosters-retro-3::before {
+  width: 17px;
+  height: 20px;
+  background-position: -160px -180px;
+}
+
+.flair-manly-warringah-sea-eagles-retro {
+  width: 20px;
+  height: 20px;
+}
+
+.flair-manly-warringah-sea-eagles-retro::before {
+  width: 20px;
+  height: 20px;
+  background-position: -96px -200px;
+}
+
+.flair-manly-warringah-sea-eagles-retro-2 {
+  width: 25px;
+  height: 20px;
+}
+
+.flair-manly-warringah-sea-eagles-retro-2::before {
+  width: 25px;
+  height: 20px;
+  background-position: -128px -200px;
+}
+
+.flair-cronulla-sutherland-sharks-retro {
+  width: 20px;
+  height: 20px;
+}
+
+.flair-cronulla-sutherland-sharks-retro::before {
+  width: 20px;
+  height: 20px;
+  background-position: -96px -220px;
+}
+
+.flair-cronulla-sutherland-sharks-retro-2 {
+  width: 23px;
+  height: 20px;
+}
+
+.flair-cronulla-sutherland-sharks-retro-2::before {
+  width: 23px;
+  height: 20px;
+  background-position: -128px -220px;
+}
+
+.flair-wests-tigers-retro {
+  width: 20px;
+  height: 20px;
+}
+
+.flair-wests-tigers-retro::before {
+  width: 20px;
+  height: 20px;
+  background-position: -96px -260px;
+}
+
+.flair-wests-tigers-retro-2 {
+  width: 15px;
+  height: 20px;
+}
+
+.flair-wests-tigers-retro-2::before {
+  width: 15px;
+  height: 20px;
+  background-position: -128px -260px;
+}
+
+.flair-gold-coast-seagulls {
+  width: 15px;
+  height: 20px;
+}
+
+.flair-gold-coast-seagulls::before {
+  width: 15px;
+  height: 20px;
+  background-position: -96px -280px;
+}
+
+.flair-gold-coast-chargers {
+  width: 21px;
+  height: 20px;
+}
+
+.flair-gold-coast-chargers::before {
+  width: 21px;
+  height: 20px;
+  background-position: -128px -280px;
+}
+
+.flair-new-zealand-warriors-retro {
+  width: 22px;
+  height: 20px;
+}
+
+.flair-new-zealand-warriors-retro::before {
+  width: 22px;
+  height: 20px;
+  background-position: -96px -300px;
+}
+
+.flair-nsw-blues-retro {
+  width: 19px;
+  height: 20px;
+}
+
+.flair-nsw-blues-retro::before {
+  width: 19px;
+  height: 20px;
+  background-position: -64px -420px;
+}
+
+.flair-qld-maroons-retro {
+  width: 36px;
+  height: 20px;
+}
+
+.flair-qld-maroons-retro::before {
+  width: 36px;
+  height: 20px;
+  background-position: -192px -420px;
+}
+
+.flair-city-origin {
+  width: 20px;
+  height: 20px;
+}
+
+.flair-city-origin::before {
+  width: 20px;
+  height: 20px;
+  background-position: -96px -420px;
+}
+
+.flair-country-origin {
+  width: 25px;
+  height: 20px;
+}
+
+.flair-country-origin::before {
+  width: 25px;
+  height: 20px;
+  background-position: -96px -440px;
+}
+
+/* NRL FINALS BANDWAGONS */
+.flair-bandwagon-broncos {
+  width: 49px;
+  height: 49px;
+}
+
+.flair-bandwagon-broncos::before {
+  width: 49px;
+  height: 49px;
+  background-position: -200px 0;
+}
+
+.flair-bandwagon-storm {
+  width: 49px;
+  height: 49px;
+}
+
+.flair-bandwagon-storm::before {
+  width: 49px;
+  height: 49px;
+  background-position: -200px -150px;
+}
+
+.flair-bandwagon-cowboys {
+  width: 49px;
+  height: 49px;
+}
+
+.flair-bandwagon-cowboys::before {
+  width: 49px;
+  height: 49px;
+  background-position: -200px -200px;
+}
+
+/* Defunct Flairs */
+.flair-north-sydney-bears {
+  width: 16px;
+  height: 20px;
+}
+
+.flair-north-sydney-bears::before {
+  width: 16px;
+  height: 20px;
+  background-position: 0 -500px;
+}
+
+.flair-adelaide-rams {
+  width: 17px;
+  height: 20px;
+}
+
+.flair-adelaide-rams::before {
+  width: 17px;
+  height: 20px;
+  background-position: -32px -500px;
+}
+
+.flair-newtown-jets {
+  width: 32px;
+  height: 20px;
+}
+
+.flair-newtown-jets::before {
+  width: 32px;
+  height: 20px;
+  background-position: -64px -500px;
+}
+
+.flair-south-queensland-crushers {
+  width: 23px;
+  height: 20px;
+}
+
+.flair-south-queensland-crushers::before {
+  width: 23px;
+  height: 20px;
+  background-position: -96px -500px;
+}
+
+.flair-western-reds {
+  width: 21px;
+  height: 20px;
+}
+
+.flair-western-reds::before {
+  width: 21px;
+  height: 20px;
+  background-position: -128px -500px;
+}
+
+.flair-hunter-mariners {
+  width: 25px;
+  height: 20px;
+}
+
+.flair-hunter-mariners::before {
+  width: 25px;
+  height: 20px;
+  background-position: -160px -500px;
+}
+
+/* Country Flairs*/
+.flair-australia {
+  width: 16px;
+  height: 20px;
+}
+
+.flair-australia::before {
+  width: 16px;
+  height: 20px;
+  background-position: 0 -540px;
+}
+
+.flair-australia-rect {
+  width: 31px;
+  height: 20px;
+}
+
+.flair-australia-rect::before {
+  width: 31px;
+  height: 20px;
+  background-position: -32px -540px;
+}
+
+.flair-new-zealand {
+  width: 19px;
+  height: 20px;
+}
+
+.flair-new-zealand::before {
+  width: 19px;
+  height: 20px;
+  background-position: 0 -560px;
+}
+
+.flair-new-zealand-rect {
+  width: 31px;
+  height: 20px;
+}
+
+.flair-new-zealand-rect::before {
+  width: 31px;
+  height: 20px;
+  background-position: -32px -560px;
+}
+
+.flair-england {
+  width: 17px;
+  height: 20px;
+}
+
+.flair-england::before {
+  width: 17px;
+  height: 20px;
+  background-position: -64px -540px;
+}
+
+.flair-france {
+  width: 13px;
+  height: 20px;
+}
+
+.flair-france::before {
+  width: 13px;
+  height: 20px;
+  background-position: -64px -560px;
+}
+
+.flair-wales {
+  width: 23px;
+  height: 20px;
+}
+
+.flair-wales::before {
+  width: 23px;
+  height: 20px;
+  background-position: -96px -540px;
+}
+
+.flair-png {
+  width: 25px;
+  height: 20px;
+}
+
+.flair-png::before {
+  width: 25px;
+  height: 20px;
+  background-position: -96px -560px;
+}
+
+.flair-fiji {
+  width: 13px;
+  height: 20px;
+}
+
+.flair-fiji::before {
+  width: 13px;
+  height: 20px;
+  background-position: -128px -540px;
+}
+
+.flair-samoa {
+  width: 21px;
+  height: 20px;
+}
+
+.flair-samoa::before {
+  width: 21px;
+  height: 20px;
+  background-position: -128px -560px;
+}
+
+.flair-ireland {
+  width: 14px;
+  height: 20px;
+}
+
+.flair-ireland::before {
+  width: 14px;
+  height: 20px;
+  background-position: -160px -540px;
+}
+
+.flair-tonga {
+  width: 17px;
+  height: 20px;
+}
+
+.flair-tonga::before {
+  width: 17px;
+  height: 20px;
+  background-position: -160px -560px;
+}
+
+.flair-scotland {
+  width: 19px;
+  height: 20px;
+}
+
+.flair-scotland::before {
+  width: 19px;
+  height: 20px;
+  background-position: -192px -540px;
+}
+
+.flair-usa {
+  width: 21px;
+  height: 20px;
+}
+
+.flair-usa::before {
+  width: 31px;
+  height: 20px;
+  background-position: -192px -560px;
+}
+
+.flair-italy {
+  width: 15px;
+  height: 20px;
+}
+
+.flair-italy::before {
+  width: 15px;
+  height: 20px;
+  background-position: 0 -580px;
+}
+
+.flair-russia {
+  width: 13px;
+  height: 20px;
+}
+
+.flair-russia::before {
+  width: 13px;
+  height: 20px;
+  background-position: -32px -580px;
+}
+
+.flair-lebanon {
+  width: 15px;
+  height: 20px;
+}
+
+.flair-lebanon::before {
+  width: 15px;
+  height: 20px;
+  background-position: -64px -580px;
+}
+
+.flair-cook-islands {
+  width: 25px;
+  height: 20px;
+}
+
+.flair-cook-islands::before {
+  width: 25px;
+  height: 20px;
+  background-position: -96px -580px;
+}
+
+.flair-south-africa {
+  width: 21px;
+  height: 20px;
+}
+
+.flair-south-africa::before {
+  width: 21px;
+  height: 20px;
+  background-position: -128px -580px;
+}
+
+.flair-canada {
+  width: 15px;
+  height: 20px;
+}
+
+.flair-canada::before {
+  width: 15px;
+  height: 20px;
+  background-position: -160px -580px;
+}
+
+.flair-malta {
+  width: 17px;
+  height: 20px;
+}
+
+.flair-malta::before {
+  width: 17px;
+  height: 20px;
+  background-position: -192px -580px;
+}
+
+.flair-el-salvador {
+  width: 19px;
+  height: 20px;
+}
+
+.flair-el-salvador::before {
+  width: 19px;
+  height: 20px;
+  background-position: 0 -600px;
+}
+
+.flair-nepal-donkeys {
+  width: 20px;
+  height: 20px;
+}
+
+.flair-nepal-donkeys::before {
+  width: 20px;
+  height: 20px;
+  background-position: -64px -640px;
+}
+
+.flair-burleigh-bears {
+  width: 18px;
+  height: 20px;
+}
+
+.flair-burleigh-bears::before {
+  width: 18px;
+  height: 20px;
+  background-position: 0 -720px;
+}
+
+.flair-cq-capras {
+  width: 28px;
+  height: 20px;
+}
+
+.flair-cq-capras::before {
+  width: 28px;
+  height: 20px;
+  background-position: -32px -720px;
+}
+
+.flair-easts-tigers {
+  width: 20px;
+  height: 20px;
+}
+
+.flair-easts-tigers::before {
+  width: 20px;
+  height: 20px;
+  background-position: -64px -720px;
+}
+
+.flair-ipswitch-jets {
+  width: 23px;
+  height: 20px;
+}
+
+.flair-ipswitch-jets::before {
+  width: 23px;
+  height: 20px;
+  background-position: -96px -720px;
+}
+
+.flair-mackay-cutters {
+  width: 22px;
+  height: 20px;
+}
+
+.flair-mackay-cutters::before {
+  width: 22px;
+  height: 20px;
+  background-position: -128px -720px;
+}
+
+.flair-northern-pride {
+  width: 28px;
+  height: 20px;
+}
+
+.flair-northern-pride::before {
+  width: 28px;
+  height: 20px;
+  background-position: -160px -720px;
+}
+
+.flair-norths-devils {
+  width: 24px;
+  height: 20px;
+}
+
+.flair-norths-devils::before {
+  width: 24px;
+  height: 20px;
+  background-position: -192px -720px;
+}
+
+.flair-png-hunters {
+  width: 32px;
+  height: 20px;
+}
+
+.flair-png-hunters::before {
+  width: 32px;
+  height: 20px;
+  background-position: 0 -740px;
+}
+
+.flair-redcliffe-dolphins {
+  width: 32px;
+  height: 20px;
+}
+
+.flair-redcliffe-dolphins::before {
+  width: 32px;
+  height: 20px;
+  background-position: -32px -740px;
+}
+
+.flair-souths-logan-magpies {
+  width: 23px;
+  height: 20px;
+}
+
+.flair-souths-logan-magpies::before {
+  width: 23px;
+  height: 20px;
+  background-position: -64px -740px;
+}
+
+.flair-sc-falcons {
+  width: 16px;
+  height: 20px;
+}
+
+.flair-sc-falcons::before {
+  width: 16px;
+  height: 20px;
+  background-position: -96px -740px;
+}
+
+.flair-townsville-blackhawks {
+  width: 32px;
+  height: 20px;
+}
+
+.flair-townsville-blackhawks::before {
+  width: 32px;
+  height: 20px;
+  background-position: -128px -740px;
+}
+
+.flair-tweed-heads-seagulls {
+  width: 31px;
+  height: 20px;
+}
+
+.flair-tweed-heads-seagulls::before {
+  width: 31px;
+  height: 20px;
+  background-position: -160px -740px;
+}
+
+.flair-wynnum-manly-seagulls {
+  width: 24px;
+  height: 20px;
+}
+
+.flair-wynnum-manly-seagulls::before {
+  width: 24px;
+  height: 20px;
+  background-position: -192px -740px;
+}
+
+.flair-illawarra-cutters {
+  width: 22px;
+  height: 20px;
+}
+
+.flair-illawarra-cutters::before {
+  width: 22px;
+  height: 20px;
+  background-position: 0 -760px;
+}
+
+.flair-mounties {
+  width: 32px;
+  height: 20px;
+}
+
+.flair-mounties::before {
+  width: 32px;
+  height: 20px;
+  background-position: -32px -760px;
+}
+
+.flair-wenty-magpies {
+  width: 24px;
+  height: 20px;
+}
+
+.flair-wenty-magpies::before {
+  width: 24px;
+  height: 20px;
+  background-position: -64px -760px;
+}
+
+.flair-wyong-roos {
+  width: 22px;
+  height: 20px;
+}
+
+.flair-wyong-roos::before {
+  width: 22px;
+  height: 20px;
+  background-position: -96px -760px;
+}
+
+.flair-ch9 {
+  width: 16px;
+  height: 20px;
+}
+
+.flair-ch9::before {
+  width: 16px;
+  height: 20px;
+  background-position: -16px -640px;
+  animation: ch9 90000s linear infinite alternate;
+}
+
+.flair-coin {
+  width: 15px;
+  height: 20px;
+}
+
+.flair-coin::before {
+  width: 15px;
+  height: 20px;
+  background-position: -62px -420px;
+}
+
+@keyframes ch9 {
+  from {
+    transform: scale(1) rotate(180deg);
+  }
+
+  to {
+    transform: scale(1) rotate(180.01deg);
+  }
+}
+
+.flair-soward {
+  width: 32px;
+  height: 20px;
+}
+
+.flair-soward::before {
+  width: 32px;
+  height: 20px;
+  background-position: -96px -640px;
+}
+
+.flair-denan {
+  width: 20px;
+  height: 20px;
+}
+
+.flair-denan::before {
+  width: 20px;
+  height: 20px;
+  background-position: 0 -660px;
+}
+
+.flair-vegemite {
+  width: 32px;
+  height: 20px;
+}
+
+.flair-vegemite::before {
+  width: 32px;
+  height: 20px;
+  background-position: -160px -680px;
+}
+
+.flair-jeynolds {
+  width: 32px;
+  height: 20px;
+}
+
+.flair-jeynolds::before {
+  width: 32px;
+  height: 20px;
+  background-position: -192px -660px;
+}
+
+.flair-falloon {
+  width: 32px;
+  height: 20px;
+}
+
+.flair-falloon::before {
+  width: 32px;
+  height: 20px;
+  background-position: -192px -620px;
+}
+
+.flair-warhead {
+  width: 25px;
+  height: 20px;
+}
+
+.flair-warhead::before {
+  width: 25px;
+  height: 20px;
+  background-position: -160px -640px;
+}
+
+/* Users */
+
+/* Link Flairs */
+div.linkflair-match-thread a.title {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-green-1 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+div.linkflair-match-thread a.thumbnail {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+div.linkflair-sledge-thread a.title {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-red-1 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+div.linkflair-sledge-thread a.thumbnail {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+div.linkflair-team-lists a.title {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-blue-3 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+div.linkflair-team-lists a.thumbnail {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+div.linkflair-mod-post a.title {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-blue-2 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+div.linkflair-mod-post a.thumbnail {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+div.linkflair-rlwc a.title {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-green-1 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+div.linkflair-rlwc a.thumbnail {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%wc-thumb%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+div.linkflair-whoseline a.title {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-orange-1 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+.link .title {
+  line-height: 22px !important;
+}
+
+div.linkflair-whoseline a.thumbnail {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+div.linkflair-offtopic a.title {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-blue-1 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+div.linkflair-offtopic a.thumbnail {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+div.linkflair-tldrtuesday a.title {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-orange-2 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+div.linkflair-tldrtuesday a.thumbnail {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+div.linkflair-punters-club a.title {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-purple-1 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+div.linkflair-punters-club a.thumbnail {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+div.linkflair-dally-r a.title {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-yellow-2 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+div.linkflair-dally-r a.thumbnail {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%dallyr-post%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+a[href='//#spoiler'], a[href='/spoiler'] {
+  background-color: $color-black-1 !important;
+  color: $color-black-1 !important;
+  cursor: default;
+}
+
+a[href='//#spoiler']:hover, a[href='/spoiler']:hover {
+  background: none !important;
+  color: $color-black-1 !important;
+  cursor: default;
+}
+
+a[href='#s'] {
+  display: inline-block;
+  color: $color-grey-mid-1 !important;
+  cursor: default;
+}
+
+a[href='#s']:::after {
+  margin-left: 5px;
+  padding: 0 3px;
+  background-color: $color-black-1 !important;
+  color: $color-black-1 !important;
+  content: attr(title);
+  visibility: visible;
+}
+
+a[href='#s']:hover:::after, a[href='#s']:active:::after {
+  background: none !important;
+  color: $color-black-1 !important;
+}
+
+@keyframes flair3 {
+  0%, 49.99%, 100% {
+    background-position: -124px -320px;
+  }
+
+  50%, 99.99% {
+    background-position: -124px -340px;
+  }
+}
+
+a[href*='/user/DreadlockedAussie']::before,
+a[href='/u/DreadlockedAussie']::before,
+a[href*='/user/camz0rs']::before,
+a[href='/u/camz0rs']::before,
+a[href*='/user/honestjackhonestly']::before,
+a[href='/u/honestjackhonestly']::before,
+a[href*='/user/ChanceVance']::before,
+a[href='/u/ChanceVance']::before,
+a[href*='/user/ChappyXIII']::before,
+a[href='/u/ChappyXIII']::before,
+a[href*='/user/titaniccharlie']::before,
+a[href='/u/titaniccharlie']::before,
+a[href*='/user/thril_hou']::before,
+a[href='/u/thril_hou']::before,
+a[href*='/user/SKiiTTLEz']::before,
+a[href='/u/SKiiTTLEz']::before,
+a[href*='/user/CockroachClitoris']::before,
+a[href='/u/CockroachClitoris']::before,
+a[href*='/user/thethirstypretzel']::before,
+a[href='/u/thethirstypretzel']::before,
+a[href*='/user/sexy_bethany']::before,
+a[href='/u/sexy_bethany']::before,
+a[href*='/user/Jester_Fleshwound']::before,
+a[href*='/user/Jester_Fleshwound']::before {
+  display: inline-block !important;
+  width: 18px;
+  height: 22px;
+  margin-right: 2px !important;
+  background-image: url(%%Dally-R%%);
+  background-repeat: no-repeat;
+  line-height: 22px !important;
+  white-space: nowrap;
+  content: '';
+  vertical-align: middle !important;
+}
+
+a[href*='/user/DreadlockedAussie/submitted/']::before,
+a[href*='/user/DreadlockedAussie/comments/']::before,
+a[href*='/user/camz0rs/submitted/']::before,
+a[href*='/user/camz0rs/comments/']::before,
+a[href*='/user/honestjackhonestly/submitted/']::before,
+a[href*='/user/honestjackhonestly/comments/']::before,
+a[href*='/user/ChanceVance/submitted/']::before,
+a[href*='/user/ChanceVance/comments/']::before,
+a[href*='/user/ChappyXIII/submitted/']::before,
+a[href*='/user/ChappyXIII/comments/']::before,
+a[href*='/user/titaniccharlie/submitted/']::before,
+a[href*='/user/titaniccharlie/comments/']::before,
+a[href*='/user/thril_hou/submitted/']::before,
+a[href*='/user/thril_hou/comments/']::before,
+a[href*='/user/SKiiTTLEz/submitted/']::before,
+a[href*='/user/SKiiTTLEz/comments/']::before,
+a[href*='/user/CockroachClitoris/submitted/']::before,
+a[href*='/user/CockroachClitoris/comments/']::before,
+a[href*='/user/thethirstypretzel/submitted/']::before,
+a[href*='/user/thethirstypretzel/comments/']::before,
+a[href*='/user/sexy_bethany/submitted/']::before,
+a[href*='/user/sexy_bethany/comments/']::before,
+a[href*='/user/Jester_Fleshwound/submitted/']::before,
+a[href*='/user/Jester_Fleshwound/comments/']::before {
+  display: none !important;
+}
+
+a[href*='/user/NFirst']::before,
+a[href='/u/NFirst']::before {
+  display: inline-block !important;
+  width: 15px;
+  height: 14px;
+  margin-right: 2px !important;
+  background-image: url(%%photoshop%%);
+  background-repeat: no-repeat;
+  line-height: 22px !important;
+  white-space: nowrap;
+  content: '';
+  vertical-align: middle !important;
+}
+
+a[href*='/user/NFirst/submitted/']::before,
+a[href*='/user/NFirst/comments/']::before {
+  display: none !important;
+}
+
+/* Members of media */
+
+a[href*='/user/Harrytats']::after {
+  margin-left: 3px;
+  color: $color-black-1;
+  font-style: italic;
+  content: '(works for Sam Tomkins blog)';
+}
+
+a[href*='/user/Harrytats/submitted/']::after,
+a[href*='/user/Harrytats/comments/']::after {
+  display: none !important;
+}
+
+a[href*='/user/adomental']::before {
+  content: 'D';
+}
+
+a[href*='/user/adomental/submitted/']::before,
+a[href*='/user/adomental/comments/']::before {
+  display: none !important;
+}
+
+a[href*='/user/crooks088'] {
+  font-size: 0;
+}
+
+a[href*='/user/crooks088']::after {
+  color: $color-navy !important;
+  font-size: 7pt;
+  content: 'Father Crooksmas ';
+}
+
+a[href*='/user/crooks088/submitted/'],
+a[href*='/user/crooks088/comments/'] {
+  font-size: 7pt;
+}
+
+a[href*='/user/crooks088/submitted/']::after,
+a[href*='/user/crooks088/comments/']::after {
+  font-size: 0;
+}
+
+a[href*='/user/boyfromthebush'] {
+  font-size: 0;
+}
+
+a[href*='/user/boyfromthebush']::after {
+  color: $color-navy !important;
+  font-size: 7.5pt;
+  content: 'Jeremyfromthebush ';
+}
+
+a[href*='/user/boyfromthebush/submitted/'],
+a[href*='/user/boyfromthebush/comments/'] {
+  font-size: 7.5pt;
+}
+
+a[href*='/user/boyfromthebush/submitted/']::after,
+a[href*='/user/boyfromthebush/comments/']::after {
+  font-size: 0;
+}
+
+a[href*='/user/honestjackhonestly'] {
+  font-size: 0;
+}
+
+a[href*='/user/honestjackhonestly']::after {
+  color: $color-navy !important;
+  font-size: 7.5pt;
+  content: 'honestdadhonestly';
+}
+
+a[href*='/user/honestjackhonestly/submitted/'],
+a[href*='/user/honestjackhonestly/comments/'] {
+  font-size: 7.5pt;
+}
+
+a[href*='/user/honestjackhonestly/submitted/']::after,
+a[href*='/user/honestjackhonestly/comments/']::after {
+  font-size: 0;
+}
+
+a[href*='/user/gabsta84'] {
+  font-size: 0;
+}
+
+a[href*='/user/gabsta84']::after {
+  color: $color-navy !important;
+  font-size: 7.5pt;
+  content: 'Dadsta84 ';
+}
+
+a[href*='/user/gabsta84/submitted/'],
+a[href*='/user/gabsta84/comments/'] {
+  font-size: 7.5pt;
+}
+
+a[href*='/user/gabsta84/submitted/']::after,
+a[href*='/user/gabsta84/comments/']::after {
+  font-size: 0;
+}
+
+a[href*='/user/AutoModerator'] {
+  font-size: 0;
+}
+
+a[href*='/user/AutoModerator']::after {
+  color: $color-navy !important;
+  font-size: 7pt;
+  content: 'Lord Voldemort';
+}
+
+a[href*='/user/AutoModerator/submitted/'],
+a[href*='/user/AutoModerator/comments/'] {
+  font-size: 7pt;
+}
+
+a[href*='/user/AutoModerator/submitted/']::after,
+a[href*='/user/AutoModerator/comments/']::after {
+  font-size: 0;
+}
+
+/* Thumbnail Replacements */
+
+.thumbnail.self,
+.thumbnail.default {
+  height: 50px;
+  background-image: url(%%Post%%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+a.thumbnail {
+  width: 70px;
+  height: 50px;
+}
+
+a.thumbnail[href*='nrl.com'] {
+  background: url(%%nrlcom%%);
+
+  img {
+    background: none;
+  }
+}
+
+a.thumbnail[href*='couriermail.com.au'] {
+  background: url(%%couriermail%%);
+
+  img {
+    display: none;
+  }
+}
+
+a.thumbnail[href*='dailytelegraph.com.au'] {
+  background: url(%%thetelegraph%%);
+
+  img {
+    display: none;
+  }
+}
+
+a.thumbnail[href*='heraldsun.com.au'] {
+  background: url(%%heraldsun%%);
+
+  img {
+    display: none;
+  }
+}

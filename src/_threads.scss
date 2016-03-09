@@ -1,0 +1,43 @@
+// scss-lint:disable SelectorDepth IdSelector
+
+/* For when no comment in a thread yet, full credit to ayemeh for finding the code */
+p#noresults {
+  font-size: 0;
+
+  &::before {
+    color: $color-red-1;
+    font-size: $font-size-sm;
+    content: '110% has not yet been given here.';
+  }
+}
+
+/* Match Thread Image Config */
+.linkflair-match-thread .usertext-body .md table:nth-of-type(1) {
+  tr {
+    border-width: 0 !important;
+    background-color: $color-white-3;
+
+    th {
+      text-align: center;
+    }
+
+    td {
+      border-width: 0 !important;
+      background-color: $color-white-3;
+    }
+
+    &:nth-of-type(1) {
+      padding: 0;
+
+      td {
+        padding: 0;
+      }
+    }
+
+    &:nth-of-type(2) td {
+      text-align: center;
+    }
+
+  }
+}
+// scss-lint:enable SelectorDepth IdSelector

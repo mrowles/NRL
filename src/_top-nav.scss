@@ -1,0 +1,43 @@
+// scss-lint:disable IdSelector
+
+/* Tab Menu */
+#header {
+
+  .tabmenu {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 190px !important;
+    width: 0 !important;
+    margin-bottom: 2px !important;
+
+    li {
+      margin: 0 -1px !important;
+
+      a {
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+        border: 1px solid $color-black-2 !important;
+        border-bottom: 1px solid $color-black-2 !important;
+        background-image: url(%%table-header%%) !important;
+        color: $color-white-1 !important;
+      }
+
+      &.selected a {
+        border: 1px solid $color-black-2;
+        border-bottom: 1px solid $color-white-1;
+        background-color: $color-white-1;
+        color: $color-green-3;
+      }
+
+      &:nth-child(1) a {
+        border-top-left-radius: 3px !important;
+      }
+
+      &:nth-last-child(1) a {
+        border-top-right-radius: 3px !important;
+      }
+    }
+
+  }
+}
+// scss-lint:enable IdSelector

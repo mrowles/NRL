@@ -1,0 +1,162 @@
+// scss-lint:disable IdSelector SelectorFormat SelectorDepth
+
+/* Wiki Tables */
+h1.wikititle strong {
+  display: none !important;
+}
+
+.wiki-page-content {
+  margin-right: -300px !important;
+
+  form #editform {
+    margin-right: 340px !important;
+  }
+
+  h5#wiki_group_a + table tr td,
+  h5#wiki_group_b + table tr td,
+  h5#wiki_group_c + table tr td,
+  h5#wiki_group_d + table tr td {
+    width: 25px;
+  }
+
+  h5#wiki_group_a + table tr td:nth-child(1),
+  h5#wiki_group_b + table tr td:nth-child(1),
+  h5#wiki_group_c + table tr td:nth-child(1),
+  h5#wiki_group_d + table tr td:nth-child(1) {
+    width: 150px;
+  }
+
+  h6#wiki_day_1 + table tr td:nth-child(1),
+  h6#wiki_day_2 + table tr td:nth-child(1) {
+    width: 60px;
+  }
+
+  h6#wiki_day_1 + table tr td:nth-child(2),
+  h6#wiki_day_1 + table tr td:nth-child(6),
+  h6#wiki_day_2 + table tr td:nth-child(2),
+  h6#wiki_day_2 + table tr td:nth-child(6) {
+    width: 90px;
+  }
+
+  h6#wiki_pools + table tr td {
+    width: 89px;
+  }
+
+  h5#wiki_group_a + table tbody tr:nth-child(-n+3),
+  h5#wiki_group_b + table tbody tr:nth-child(-n+3),
+  h5#wiki_group_c + table tbody tr:nth-child(-n+1),
+  h5#wiki_group_d + table tbody tr:nth-child(-n+1) {
+    background: $color-grey-light-2;
+  }
+
+  thead tr:nth-child(n) {
+    border: 0;
+    background-image: url(%%table-bg%%);
+    color: $color-white-1;
+    text-align: center;
+  }
+
+  tbody tr:nth-of-type(even) {
+    background: $color-white-1;
+  }
+
+  tbody tr:nth-of-type(odd) {
+    background: $color-white-4;
+  }
+
+  thead tr th {
+    border: 0;
+    text-align: center;
+  }
+
+  tbody, thead {
+    border: $color-grey-light-4 1px solid !important;
+  }
+
+  tbody tr {
+    border: $color-grey-light-4 1px solid !important;
+    vertical-align: middle;
+  }
+
+  tbody td {
+    border: $color-grey-mid-2 0 solid !important;
+  }
+
+  td, th {
+    height: 20px;
+  }
+
+  h6#wiki_pools + table thead tr th:nth-child(1) {
+    background: $color-blue-5 !important;
+    color: $color-black-1;
+  }
+
+  h6#wiki_pools + table thead tr th:nth-child(2) {
+    background: $color-green-1 !important;
+    color: $color-black-1;
+  }
+
+  h6#wiki_pools + table thead tr th:nth-child(3) {
+    background: $color-yellow-1 !important;
+    color: $color-black-1;
+  }
+
+  h6#wiki_pools + table thead tr th:nth-child(4) {
+    background: $color-red-1 !important;
+    color: $color-black-1;
+  }
+
+  h6#wiki_day_1 + table tbody tr:nth-child(1) td:nth-child(1),
+  h6#wiki_day_1 + table tbody tr:nth-child(2) td:nth-child(1),
+  h6#wiki_day_1 + table tbody tr:nth-child(9) td:nth-child(1),
+  h6#wiki_day_1 + table tbody tr:nth-child(10) td:nth-child(1),
+  h6#wiki_day_2 + table tbody tr:nth-child(1) td:nth-child(1),
+  h6#wiki_day_2 + table tbody tr:nth-child(2) td:nth-child(1) {
+    background: $color-blue-5 !important;
+  }
+
+  h6#wiki_day_1 + table tbody tr:nth-child(3) td:nth-child(1),
+  h6#wiki_day_1 + table tbody tr:nth-child(4) td:nth-child(1),
+  h6#wiki_day_1 + table tbody tr:nth-child(11) td:nth-child(1),
+  h6#wiki_day_1 + table tbody tr:nth-child(12) td:nth-child(1),
+  h6#wiki_day_2 + table tbody tr:nth-child(3) td:nth-child(1),
+  h6#wiki_day_2 + table tbody tr:nth-child(4) td:nth-child(1) {
+    background: $color-green-4 !important;
+  }
+
+  h6#wiki_day_1 + table tbody tr:nth-child(5) td:nth-child(1),
+  h6#wiki_day_1 + table tbody tr:nth-child(6) td:nth-child(1),
+  h6#wiki_day_1 + table tbody tr:nth-child(13) td:nth-child(1),
+  h6#wiki_day_1 + table tbody tr:nth-child(14) td:nth-child(1),
+  h6#wiki_day_2 + table tbody tr:nth-child(5) td:nth-child(1),
+  h6#wiki_day_2 + table tbody tr:nth-child(6) td:nth-child(1) {
+    background: $color-yellow-4 !important;
+  }
+
+  h6#wiki_day_1 + table tbody tr:nth-child(7) td:nth-child(1),
+  h6#wiki_day_1 + table tbody tr:nth-child(8) td:nth-child(1),
+  h6#wiki_day_1 + table tbody tr:nth-child(15) td:nth-child(1),
+  h6#wiki_day_1 + table tbody tr:nth-child(16) td:nth-child(1),
+  h6#wiki_day_2 + table tbody tr:nth-child(7) td:nth-child(1),
+  h6#wiki_day_2 + table tbody tr:nth-child(8) td:nth-child(1) {
+    background: $color-red-1 !important;
+  }
+
+  h6#wiki_day_2 + table tbody tr:nth-child(9) td:nth-child(1),
+  h6#wiki_day_2 + table tbody tr:nth-child(10) td:nth-child(1),
+  h6#wiki_day_2 + table tbody tr:nth-child(11) td:nth-child(1),
+  h6#wiki_day_2 + table tbody tr:nth-child(12) td:nth-child(1) {
+    background: $color-grey-light-2 !important;
+  }
+
+  h6#wiki_day_2 + table tbody tr:nth-child(13) td:nth-child(1),
+  h6#wiki_day_2 + table tbody tr:nth-child(14) td:nth-child(1) {
+    background: $color-grey-light-3 !important;
+  }
+
+  h6#wiki_day_2 + table tbody tr:nth-child(15) td:nth-child(1) {
+    background: $color-gold-1 !important;
+  }
+}
+
+// scss-lint:enable IdSelector SelectorFormat SelectorDepth

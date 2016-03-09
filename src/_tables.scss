@@ -1,0 +1,973 @@
+// scss-lint:disable IdSelector SelectorFormat
+
+/** Tabling inside posts for match threads **/
+
+.content .md table {
+  width: 60%;
+  margin: 1em auto;
+  border: 1px solid $color-grey-light-3;
+}
+
+.content .md th {
+  padding: 3px;
+  border: 0;
+  background-color: $color-grey-dark-2;
+  color: $color-white-5;
+}
+
+.content .md td {
+  padding: 2px 4px;
+  border: 0;
+  border-top: 1px solid $color-grey-light-3;
+}
+
+.content .md tr {
+  background-color: $color-white-1;
+}
+
+.content .md tr:nth-of-type(odd) {
+  background-color: $color-white-3;
+}
+
+/* Discussion/Sledge/Team Lists threads */
+#siteTable a.title[href*='match_thread'],
+#siteTable a.title[href*='discussion_thread'] {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-green-1 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+.link .title {
+  line-height: 22px !important;
+}
+
+#siteTable a.thumbnail[href*='match_thread'],
+#siteTable a.thumbnail[href*='discussion_thread'] {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+#siteTable a.title[href*='sledge_thread'],
+#siteTable a.title[href*='SLEDGE_THREAD'] {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-red-1 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+#siteTable a.thumbnail[href*='sledge_thread'],
+#siteTable a.thumbnail[href*='SLEDGE_THREAD'] {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+#siteTable a.title[href*='the_punters_club'],
+#siteTable a.title[href*='THE_PUNTERS_CLUB'] {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-purple-1 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+#siteTable a.thumbnail[href*='the_punters_club'],
+#siteTable a.thumbnail[href*='THE_PUNTERS_CLUB'] {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+#siteTable a.title[href*='team_lists'] {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-blue-1 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+#siteTable a.thumbnail[href*='team_lists'] {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+#siteTable a.title[href*='mod_post'] {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-blue-2 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+#siteTable a.thumbnail[href*='mod_post'] {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+#siteTable a.title[href*='whose_line_is_it'],
+#siteTable a.title[href*='21yapt'] {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-orange-1 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+#siteTable a.thumbnail[href*='whose_line_is_it'],
+#siteTable a.thumbnail[href*='21yapt'] {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+#siteTable a.thumbnail[href*='state_of_origin'] {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%Post%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+#siteTable a.thumbnail[href*='/world_cup_'] {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%wc-thumb%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+#siteTable a.title[href*='off_topic_thread'],
+#siteTable a.title[href*='rnrl_photoshop_battle'] {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-blue-1 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+#siteTable a.thumbnail[href*='off_topic_thread'],
+#siteTable a.thumbnail[href*='rnrl_photoshop_battle'] {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+#siteTable a.title[href*='tldr_tuesday'] {
+  height: 30px !important;
+  padding: 4px 0;
+  color: $color-orange-2 !important;
+  font-size: $font-size-default;
+  font-weight: bold;
+}
+
+#siteTable a.thumbnail[href*='tldr_tuesday'] {
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(%%steeden%%) !important;
+  background-position: 0;
+  opacity: 1;
+}
+
+/* Scoreboard Numbers */
+
+#siteTable a[href^='/#score-0'],
+.md table a[href^='/#score-0'],
+#siteTable a[href^='/#score-1'],
+.md table a[href^='/#score-1'],
+#siteTable a[href^='/#score-2'],
+.md table a[href^='/#score-2'],
+#siteTable a[href^='/#score-3'],
+.md table a[href^='/#score-3'],
+#siteTable a[href^='/#score-4'],
+.md table a[href^='/#score-4'],
+#siteTable a[href^='/#score-5'],
+.md table a[href^='/#score-5'],
+#siteTable a[href^='/#score-6'],
+.md table a[href^='/#score-6'],
+#siteTable a[href^='/#score-7'],
+.md table a[href^='/#score-7'],
+#siteTable a[href^='/#score-8'],
+.md table a[href^='/#score-8'],
+#siteTable a[href^='/#score-9'],
+.md table a[href^='/#score-9'] {
+  display: inline-block;
+  width: 70px;
+  height: 120px;
+  padding: 0;
+  border-width: 0;
+  background-image: url(%%grandfinalday%%);
+  line-height: normal;
+  cursor: default;
+}
+
+#siteTable a[href^='/#score-0'],
+.md table a[href^='/#score-0'] {
+  background-position: 0 -450px;
+}
+
+#siteTable a[href^='/#score-1'],
+.md table a[href^='/#score-1'] {
+  background-position: -70px -450px;
+}
+
+#siteTable a[href^='/#score-2'],
+.md table a[href^='/#score-2'] {
+  background-position: -140px -450px;
+}
+
+#siteTable a[href^='/#score-3'],
+.md table a[href^='/#score-3'] {
+  background-position: -210px -450px;
+}
+
+#siteTable a[href^='/#score-4'],
+.md table a[href^='/#score-4'] {
+  background-position: -280px -450px;
+}
+
+#siteTable a[href^='/#score-5'],
+.md table a[href^='/#score-5'] {
+  background-position: -350px -450px;
+}
+
+#siteTable a[href^='/#score-6'],
+.md table a[href^='/#score-6'] {
+  background-position: -420px -450px;
+}
+
+#siteTable a[href^='/#score-7'],
+.md table a[href^='/#score-7'] {
+  background-position: 0 -570px;
+}
+
+#siteTable a[href^='/#score-8'],
+.md table a[href^='/#score-8'] {
+  background-position: -70px -570px;
+}
+
+#siteTable a[href^='/#score-9'],
+.md table a[href^='/#score-9'] {
+  background-position: -140px -570px;
+}
+
+/* New gamethread logos */
+
+#siteTable a[href^='/#bne-h'],
+.md table a[href^='/#bne-h'],
+#siteTable a[href^='/#bri-h'],
+.md table a[href^='/#bri-h'],
+#siteTable a[href^='/#bne-a'],
+.md table a[href^='/#bne-a'],
+#siteTable a[href^='/#bri-a'],
+.md table a[href^='/#bri-a'],
+#siteTable a[href^='/#can-h'],
+.md table a[href^='/#can-h'],
+#siteTable a[href^='/#can-a'],
+.md table a[href^='/#can-a'],
+#siteTable a[href^='/#bul-h'],
+.md table a[href^='/#bul-h'],
+#siteTable a[href^='/#bul-a'],
+.md table a[href^='/#bul-a'],
+#siteTable a[href^='/#cro-h'],
+.md table a[href^='/#cro-h'],
+#siteTable a[href^='/#cro-a'],
+.md table a[href^='/#cro-a'],
+#siteTable a[href^='/#bul-h'],
+.md table a[href^='/#bul-h'],
+#siteTable a[href^='/#gct-h'],
+.md table a[href^='/#gct-h'],
+#siteTable a[href^='/#gld-h'],
+.md table a[href^='/#gld-h'],
+#siteTable a[href^='/#gct-a'],
+.md table a[href^='/#gct-a'],
+#siteTable a[href^='/#gld-a'],
+.md table a[href^='/#gld-a'],
+#siteTable a[href^='/#man-h'],
+.md table a[href^='/#man-h'],
+#siteTable a[href^='/#man-a'],
+.md table a[href^='/#man-a'],
+#siteTable a[href^='/#mel-h'],
+.md table a[href^='/#mel-h'],
+#siteTable a[href^='/#mel-a'],
+.md table a[href^='/#mel-a'],
+#siteTable a[href^='/#nzw-h'],
+.md table a[href^='/#nzw-h'],
+#siteTable a[href^='/#war-h'],
+.md table a[href^='/#war-h'],
+#siteTable a[href^='/#nzw-a'],
+.md table a[href^='/#nzw-a'],
+#siteTable a[href^='/#war-a'],
+.md table a[href^='/#war-a'],
+#siteTable a[href^='/#new-h'],
+.md table a[href^='/#new-h'],
+#siteTable a[href^='/#new-a'],
+.md table a[href^='/#new-a'],
+#siteTable a[href^='/#nqc-h'],
+.md table a[href^='/#nqc-h'],
+#siteTable a[href^='/#nql-h'],
+.md table a[href^='/#nql-h'],
+#siteTable a[href^='/#nqc-a'],
+.md table a[href^='/#nqc-a'],
+#siteTable a[href^='/#nql-a'],
+.md table a[href^='/#nql-a'],
+#siteTable a[href^='/#par-h'],
+.md table a[href^='/#par-h'],
+#siteTable a[href^='/#par-a'],
+.md table a[href^='/#par-a'],
+#siteTable a[href^='/#pen-h'],
+.md table a[href^='/#pen-h'],
+#siteTable a[href^='/#pen-a'],
+.md table a[href^='/#pen-a'],
+#siteTable a[href^='/#ssr-h'],
+.md table a[href^='/#ssr-h'],
+#siteTable a[href^='/#sou-h'],
+.md table a[href^='/#sou-h'],
+#siteTable a[href^='/#ssr-a'],
+.md table a[href^='/#ssr-a'],
+#siteTable a[href^='/#sou-a'],
+.md table a[href^='/#sou-a'],
+#siteTable a[href^='/#sgi-h'],
+.md table a[href^='/#sgi-h'],
+#siteTable a[href^='/#sgi-a'],
+.md table a[href^='/#sgi-a'],
+#siteTable a[href^='/#syd-h'],
+.md table a[href^='/#syd-h'],
+#siteTable a[href^='/#syd-a'],
+.md table a[href^='/#syd-a'],
+#siteTable a[href^='/#wst-h'],
+.md table a[href^='/#wst-h'],
+#siteTable a[href^='/#wst-a'],
+.md table a[href^='/#wst-a'] {
+  display: inline-block;
+  width: 220px;
+  height: 100px;
+  padding: 0;
+  border-width: 0;
+  background-image: url(%%gamelogos%%);
+  line-height: normal;
+  cursor: default;
+}
+
+#siteTable a[href^='/#bne-h'],
+.md table a[href^='/#bne-h'], #siteTable a[href^='/#bri-h'],
+.md table a[href^='/#bri-h'] {
+  background-position: 0 0;
+}
+
+#siteTable a[href^='/#bne-a'],
+.md table a[href^='/#bne-a'], #siteTable a[href^='/#bri-a'],
+.md table a[href^='/#bri-a'] {
+  background-position: -220px 0;
+}
+
+#siteTable a[href^='/#can-h'],
+.md table a[href^='/#can-h'] {
+  background-position: 0 -100px;
+}
+
+#siteTable a[href^='/#can-a'],
+.md table a[href^='/#can-a'] {
+  background-position: -220px -100px;
+}
+
+#siteTable a[href^='/#bul-h'],
+.md table a[href^='/#bul-h'] {
+  background-position: 0 -200px;
+}
+
+#siteTable a[href^='/#bul-a'],
+.md table a[href^='/#bul-a'] {
+  background-position: -220px -200px;
+}
+
+#siteTable a[href^='/#cro-h'],
+.md table a[href^='/#cro-h'] {
+  background-position: 0 -300px;
+}
+
+#siteTable a[href^='/#cro-a'],
+.md table a[href^='/#cro-a'] {
+  background-position: -220px -300px;
+}
+
+#siteTable a[href^='/#gct-h'],
+.md table a[href^='/#gct-h'], #siteTable a[href^='/#gld-h'],
+.md table a[href^='/#gld-h'] {
+  background-position: 0 -400px;
+}
+
+#siteTable a[href^='/#gct-a'],
+.md table a[href^='/#gct-a'], #siteTable a[href^='/#gld-a'],
+.md table a[href^='/#gld-a'] {
+  background-position: -220px -400px;
+}
+
+#siteTable a[href^='/#man-h'],
+.md table a[href^='/#man-h'] {
+  background-position: 0 -500px;
+}
+
+#siteTable a[href^='/#man-a'],
+.md table a[href^='/#man-a'] {
+  background-position: -220px -500px;
+}
+
+#siteTable a[href^='/#mel-h'],
+.md table a[href^='/#mel-h'] {
+  background-position: 0 -600px;
+}
+
+#siteTable a[href^='/#mel-a'],
+.md table a[href^='/#mel-a'] {
+  background-position: -220px -600px;
+}
+
+#siteTable a[href^='/#nzw-h'],
+.md table a[href^='/#nzw-h'], #siteTable a[href^='/#war-h'],
+.md table a[href^='/#war-h'] {
+  background-position: 0 -700px;
+}
+
+#siteTable a[href^='/#nzw-a'],
+.md table a[href^='/#nzw-a'], #siteTable a[href^='/#war-a'],
+.md table a[href^='/#war-a'] {
+  background-position: -220px -700px;
+}
+
+#siteTable a[href^='/#new-h'],
+.md table a[href^='/#new-h'] {
+  background-position: 0 -800px;
+}
+
+#siteTable a[href^='/#new-a'],
+.md table a[href^='/#new-a'] {
+  background-position: -220px -800px;
+}
+
+#siteTable a[href^='/#nqc-h'],
+.md table a[href^='/#nqc-h'], #siteTable a[href^='/#nql-h'],
+.md table a[href^='/#nql-h'] {
+  background-position: 0 -900px;
+}
+
+#siteTable a[href^='/#nqc-a'],
+.md table a[href^='/#nqc-a'], #siteTable a[href^='/#nql-a'],
+.md table a[href^='/#nql-a'] {
+  background-position: -220px -900px;
+}
+
+#siteTable a[href^='/#par-h'],
+.md table a[href^='/#par-h'] {
+  background-position: 0 -1000px;
+}
+
+#siteTable a[href^='/#par-a'],
+.md table a[href^='/#par-a'] {
+  background-position: -220px -1000px;
+}
+
+#siteTable a[href^='/#pen-h'],
+.md table a[href^='/#pen-h'] {
+  background-position: 0 -1100px;
+}
+
+#siteTable a[href^='/#pen-a'],
+.md table a[href^='/#pen-a'] {
+  background-position: -220px -1100px;
+}
+
+#siteTable a[href^='/#ssr-h'],
+.md table a[href^='/#ssr-h'], #siteTable a[href^='/#sou-h'],
+.md table a[href^='/#sou-h'] {
+  background-position: 0 -1200px;
+}
+
+#siteTable a[href^='/#ssr-a'],
+.md table a[href^='/#ssr-a'], #siteTable a[href^='/#sou-a'],
+.md table a[href^='/#sou-a'] {
+  background-position: -220px -1200px;
+}
+
+#siteTable a[href^='/#sgi-h'],
+.md table a[href^='/#sgi-h'] {
+  background-position: 0 -1300px;
+}
+
+#siteTable a[href^='/#sgi-a'],
+.md table a[href^='/#sgi-a'] {
+  background-position: -220px -1300px;
+}
+
+#siteTable a[href^='/#syd-h'],
+.md table a[href^='/#syd-h'] {
+  background-position: 0 -1400px;
+}
+
+#siteTable a[href^='/#syd-a'],
+.md table a[href^='/#syd-a'] {
+  background-position: -220px -1400px;
+}
+
+#siteTable a[href^='/#wst-h'],
+.md table a[href^='/#wst-h'] {
+  background-position: 0 -1500px;
+}
+
+#siteTable a[href^='/#wst-a'],
+.md table a[href^='/#wst-a'] {
+  background-position: -220px -1500px;
+}
+
+#siteTable a[href^='/#sng-h'],
+.md table a[href^='/#sng-h'],
+#siteTable a[href^='/#sng-a'],
+.md table a[href^='/#sng-a'] {
+  display: inline-block;
+  width: 220px;
+  height: 100px;
+  padding: 0;
+  border-width: 0;
+  background-image: url(%%gamethread%%);
+  line-height: normal;
+  cursor: default;
+}
+
+#siteTable a[href^='/#sng-h'],
+.md table a[href^='/#sng-h'] {
+  background-position: 0 -1600px;
+}
+
+#siteTable a[href^='/#sng-a'],
+.md table a[href^='/#sng-a'] {
+  background-position: -220px -1600px;
+}
+
+/* State and Internationals */
+
+#siteTable a[href^='/#cry-h'],
+.md table a[href^='/#cry-h'],
+#siteTable a[href^='/#cty-a'],
+.md table a[href^='/#cty-a'],
+#siteTable a[href^='/#qld-h'],
+.md table a[href^='/#qld-h'],
+#siteTable a[href^='/#qld-a'],
+.md table a[href^='/#qld-a'],
+#siteTable a[href^='/#nsw-h'],
+.md table a[href^='/#nsw-h'],
+#siteTable a[href^='/#nsw-a'],
+.md table a[href^='/#nsw-a'],
+#siteTable a[href^='/#aus-h'],
+.md table a[href^='/#aus-h'],
+#siteTable a[href^='/#aus-a'],
+.md table a[href^='/#aus-a'],
+#siteTable a[href^='/#nzk-h'],
+.md table a[href^='/#nzk-h'],
+#siteTable a[href^='/#nzk-a'],
+.md table a[href^='/#nzk-a'],
+#siteTable a[href^='/#png-h'],
+.md table a[href^='/#png-h'],
+#siteTable a[href^='/#png-a'],
+.md table a[href^='/#png-a'],
+#siteTable a[href^='/#fij-h'],
+.md table a[href^='/#fij-h'],
+#siteTable a[href^='/#fij-a'],
+.md table a[href^='/#fij-a'],
+#siteTable a[href^='/#sam-h'],
+.md table a[href^='/#sam-h'],
+#siteTable a[href^='/#sam-a'],
+.md table a[href^='/#sam-a'],
+#siteTable a[href^='/#tng-h'],
+.md table a[href^='/#tng-h'],
+#siteTable a[href^='/#tng-a'],
+.md table a[href^='/#tng-a'],
+#siteTable a[href^='/#eng-h'],
+.md table a[href^='/#eng-h'],
+#siteTable a[href^='/#eng-a'],
+.md table a[href^='/#eng-a'],
+#siteTable a[href^='/#qld-j-h'],
+.md table a[href^='/#qld-j-h'],
+#siteTable a[href^='/#qld-j-a'],
+.md table a[href^='/#qld-j-a'],
+#siteTable a[href^='/#qld-r-h'],
+.md table a[href^='/#qld-r-h'],
+#siteTable a[href^='/#qld-r-a'],
+.md table a[href^='/#qld-r-a'],
+#siteTable a[href^='/#nsw-j-h'],
+.md table a[href^='/#nsw-j-h'],
+#siteTable a[href^='/#nsw-j-a'],
+.md table a[href^='/#nsw-j-a'],
+#siteTable a[href^='/#nsw-r-h'],
+.md table a[href^='/#nsw-r-h'],
+#siteTable a[href^='/#nsw-r-a'],
+.md table a[href^='/#nsw-r-a'],
+#siteTable a[href^='/#aus-w-h'],
+.md table a[href^='/#aus-w-h'],
+#siteTable a[href^='/#aus-w-a'],
+.md table a[href^='/#aus-w-a'],
+#siteTable a[href^='/#aus-j-h'],
+.md table a[href^='/#aus-j-h'],
+#siteTable a[href^='/#aus-j-a'],
+.md table a[href^='/#aus-j-a'],
+#siteTable a[href^='/#nzk-w-h'],
+.md table a[href^='/#nzk-w-h'],
+#siteTable a[href^='/#nzk-w-a'],
+.md table a[href^='/#nzk-w-a'],
+#siteTable a[href^='/#nzk-j-h'],
+.md table a[href^='/#nzk-j-h'],
+#siteTable a[href^='/#nzk-j-a'],
+.md table a[href^='/#nzk-j-a'] {
+  display: inline-block;
+  width: 220px;
+  height: 100px;
+  padding: 0;
+  border-width: 0;
+  background-image: url(%%gamethread-state-int%%);
+  line-height: normal;
+  cursor: default;
+}
+
+#siteTable a[href^='/#cry-h'],
+.md table a[href^='/#cry-h'] {
+  background-position: 0 0;
+}
+
+#siteTable a[href^='/#cty-a'],
+.md table a[href^='/#cty-a'] {
+  background-position: -220px 0;
+}
+
+#siteTable a[href^='/#qld-h'],
+.md table a[href^='/#qld-h'] {
+  background-position: 0 -100px;
+}
+
+#siteTable a[href^='/#qld-a'],
+.md table a[href^='/#qld-a'] {
+  background-position: -220px -100px;
+}
+
+#siteTable a[href^='/#nsw-h'],
+.md table a[href^='/#nsw-h'] {
+  background-position: 0 -200px;
+}
+
+#siteTable a[href^='/#nsw-a'],
+.md table a[href^='/#nsw-a'] {
+  background-position: -220px -200px;
+}
+
+#siteTable a[href^='/#aus-h'],
+.md table a[href^='/#aus-h'] {
+  background-position: 0 -300px;
+}
+
+#siteTable a[href^='/#aus-a'],
+.md table a[href^='/#aus-a'] {
+  background-position: -220px -300px;
+}
+
+#siteTable a[href^='/#nzk-h'],
+.md table a[href^='/#nzk-h'] {
+  background-position: 0 -400px;
+}
+
+#siteTable a[href^='/#nzk-a'],
+.md table a[href^='/#nzk-a'] {
+  background-position: -220px -400px;
+}
+
+#siteTable a[href^='/#png-h'],
+.md table a[href^='/#png-h'] {
+  background-position: 0 -500px;
+}
+
+#siteTable a[href^='/#png-a'],
+.md table a[href^='/#png-a'] {
+  background-position: -220px -500px;
+}
+
+#siteTable a[href^='/#fij-h'],
+.md table a[href^='/#fij-h'] {
+  background-position: 0 -600px;
+}
+
+#siteTable a[href^='/#fij-a'],
+.md table a[href^='/#fij-a'] {
+  background-position: -220px -600px;
+}
+
+#siteTable a[href^='/#sam-h'],
+.md table a[href^='/#sam-h'] {
+  background-position: 0 -700px;
+}
+
+#siteTable a[href^='/#sam-a'],
+.md table a[href^='/#sam-a'] {
+  background-position: -220px -700px;
+}
+
+#siteTable a[href^='/#tng-h'],
+.md table a[href^='/#tng-h'] {
+  background-position: 0 -800px;
+}
+
+#siteTable a[href^='/#tng-a'],
+.md table a[href^='/#tng-a'] {
+  background-position: -220px -800px;
+}
+
+#siteTable a[href^='/#eng-h'],
+.md table a[href^='/#eng-h'] {
+  background-position: 0 -900px;
+}
+
+#siteTable a[href^='/#eng-a'],
+.md table a[href^='/#eng-a'] {
+  background-position: -220px -900px;
+}
+
+#siteTable a[href^='/#qld-j-h'],
+.md table a[href^='/#qld-j-h'] {
+  background-position: 0 -1000px;
+}
+
+#siteTable a[href^='/#qld-j-a'],
+.md table a[href^='/#qld-j-a'] {
+  background-position: -220px -1000px;
+}
+
+#siteTable a[href^='/#qld-r-h'],
+.md table a[href^='/#qld-r-h'] {
+  background-position: 0 -1100px;
+}
+
+#siteTable a[href^='/#qld-r-a'],
+.md table a[href^='/#qld-r-a'] {
+  background-position: -220px -1100px;
+}
+
+#siteTable a[href^='/#nsw-j-h'], .md table a[href^='/#nsw-j-h'] {
+  background-position: 0 -1200px;
+}
+
+#siteTable a[href^='/#nsw-j-a'], .md table a[href^='/#nsw-j-a'] {
+  background-position: -220px -1200px;
+}
+
+#siteTable a[href^='/#nsw-r-h'], .md table a[href^='/#nsw-r-h'] {
+  background-position: 0 -1300px;
+}
+
+#siteTable a[href^='/#nsw-r-a'], .md table a[href^='/#nsw-r-a'] {
+  background-position: -220px -1300px;
+}
+
+#siteTable a[href^='/#aus-w-h'], .md table a[href^='/#aus-w-h'] {
+  background-position: 0 -1400px;
+}
+
+#siteTable a[href^='/#aus-w-a'], .md table a[href^='/#aus-w-a'] {
+  background-position: -220px -1400px;
+}
+
+#siteTable a[href^='/#aus-j-h'], .md table a[href^='/#aus-j-h'] {
+  background-position: 0 -1500px;
+}
+
+#siteTable a[href^='/#aus-j-a'], .md table a[href^='/#aus-j-a'] {
+  background-position: -220px -1500px;
+}
+
+#siteTable a[href^='/#nzk-w-h'], .md table a[href^='/#nzk-w-h'] {
+  background-position: 0 -1600px;
+}
+
+#siteTable a[href^='/#nzk-w-a'], .md table a[href^='/#nzk-w-a'] {
+  background-position: -220px -1600px;
+}
+
+#siteTable a[href^='/#nzk-j-h'], .md table a[href^='/#nzk-j-h'] {
+  background-position: 0 -1700px;
+}
+
+#siteTable a[href^='/#nzk-j-a'], .md table a[href^='/#nzk-j-a'] {
+  background-position: -220px -1700px;
+}
+
+/* Grand Final day testing */
+
+/* Final Matches */
+#siteTable a[href^='/#nrl-gf'], .md table a[href^='/#nrl-gf'],
+#siteTable a[href^='/#sc-gf'], .md table a[href^='/#sc-gf'],
+#siteTable a[href^='/#u20-gf'], .md table a[href^='/#u20-gf'] {
+  display: inline-block;
+  width: 440px;
+  height: 100px;
+  padding: 0;
+  border-width: 0;
+  background-image: url(%%grandfinalday%%);
+  line-height: normal;
+  cursor: default;
+}
+
+#siteTable a[href^='/#nrl-gf'], .md table a[href^='/#nrl-gf'] {
+  background-position: 0 0;
+}
+
+#siteTable a[href^='/#sc-gf'], .md table a[href^='/#sc-gf'] {
+  background-position: 0 -100px;
+}
+
+#siteTable a[href^='/#u20-gf'], .md table a[href^='/#u20-gf'] {
+  background-position: 0 -200px;
+}
+
+/* Team Names */
+
+#siteTable a[href^='/#bne-team'], .md table a[href^='/#bne-team'],
+#siteTable a[href^='/#nql-team'], .md table a[href^='/#nql-team'],
+#siteTable a[href^='/#new-team'], .md table a[href^='/#new-team'],
+#siteTable a[href^='/#ips-team'], .md table a[href^='/#ips-team'],
+#siteTable a[href^='/#pen-team'], .md table a[href^='/#pen-team'],
+#siteTable a[href^='/#man-team'], .md table a[href^='/#man-team'] {
+  display: inline-block;
+  width: 220px;
+  height: 50px;
+  padding: 0;
+  border-width: 0;
+  background-image: url(%%grandfinalday%%);
+  line-height: normal;
+  cursor: default;
+}
+
+#siteTable a[href^='/#bne-team'], .md table a[href^='/#bne-team'] {
+  background-position: 0 -300px;
+}
+
+#siteTable a[href^='/#nql-team'], .md table a[href^='/#nql-team'] {
+  background-position: -220px -300px;
+}
+
+#siteTable a[href^='/#new-team'], .md table a[href^='/#new-team'] {
+  background-position: 0 -350px;
+}
+
+#siteTable a[href^='/#ips-team'], .md table a[href^='/#ips-team'] {
+  background-position: -220px -350px;
+}
+
+#siteTable a[href^='/#pen-team'], .md table a[href^='/#pen-team'] {
+  background-position: 0 -400px;
+}
+
+#siteTable a[href^='/#man-team'], .md table a[href^='/#man-team'] {
+  background-position: -220px -400px;
+}
+
+/* Competition Logos*/
+
+#siteTable a[href^='/#nrl-team'], .md table a[href^='/#nrl-team'],
+#siteTable a[href^='/#sc-team'], .md table a[href^='/#sc-team'],
+#siteTable a[href^='/#u20-team'], .md table a[href^='/#u20-team'] {
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  padding: 0;
+  border-width: 0;
+  background-image: url(%%grandfinalday%%);
+  line-height: normal;
+  cursor: default;
+}
+
+#siteTable a[href^='/#nrl-team'], .md table a[href^='/#nrl-team'] {
+  background-position: -210px -570px;
+}
+
+#siteTable a[href^='/#sc-team'], .md table a[href^='/#sc-team'] {
+  background-position: -330px -570px;
+}
+
+#siteTable a[href^='/#u20-team'], .md table a[href^='/#u20-team'] {
+  background-position: -270px -570px;
+}
+
+/* Team Scores */
+
+#siteTable a[href^='/#score-bne'], .md table a[href^='/#score-bne'],
+#siteTable a[href^='/#score-nql'], .md table a[href^='/#score-nql'] {
+  display: inline-block;
+  width: 140px;
+  height: 64px;
+  padding: 0;
+  border-width: 0;
+  background-image: url(%%grandfinalday%%);
+  line-height: normal;
+  cursor: default;
+}
+
+#siteTable a[href^='/#score-bne'], .md table a[href^='/#score-bne'] {
+  background-position: -50px -350px;
+}
+
+#siteTable a[href^='/#score-nql'], .md table a[href^='/#score-nql'] {
+  background-position: -190px -350px;
+}
+
+/** Fix sidebar after reddit CSS changes **/
+
+.side .md h6 {
+  margin: 0;
+  font-size: 0;
+}
+
+.side .md th,
+.side .md td {
+  padding: 1px 3px;
+}
+
+.side .md table {
+  width: 300px;
+}
+
+/* Live Now Flair */
+#siteTable a.title[href*='22w9dgrfg8k']::after {
+  color: $color-red-1 !important;
+  content: '- LIVE NOW';
+}
+
+#siteTable a.title[href*='2w9fgjdfghjaq']::after {
+  color: $color-red-1 !important;
+  content: '- ON NOW';
+}
+
+// scss-lint:enable IdSelector SelectorFormat

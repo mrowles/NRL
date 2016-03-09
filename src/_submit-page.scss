@@ -1,0 +1,41 @@
+.submit {
+  .tabmenu {
+    width: 0;
+    margin-bottom: 2px;
+
+    li {
+      margin: 0 -1px;
+
+      a {
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+        border: 1px solid $color-black-2;
+        border-bottom: 1px solid $color-black-2;
+        background-image: url(%%table-header%%);
+        color: $color-white-1;
+        font-size: $font-size-sm;
+      }
+
+      &.selected a {
+        border: 1px solid $color-black-2;
+        border-bottom: 1px solid $color-black-2;
+        background-color: $color-white-1;
+        color: $color-green-3;
+        font-size: $font-size-sm;
+      }
+
+      &:nth-child(1) a {
+        border-top-left-radius: 3px;
+      }
+
+      &:nth-last-child(1) a {
+        border-top-right-radius: 3px;
+      }
+
+    }
+  }
+
+  .formtabs-content {
+    border-top: 4px solid $color-green-1;
+  }
+}

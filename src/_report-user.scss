@@ -1,0 +1,54 @@
+/* Custom Report Options */
+.report-action-form li:not(:last-child) label,
+.report-action-form .reason-prompt,
+.report-reasons li.report-reason[title='spam'],
+.report-reasons li.report-reason[title='vote manipulation'],
+.report-reasons li.report-reason[title='personal information'],
+.report-reasons li.report-reason[title='sexualizing minors'],
+.report-reasons li.report-reason[title='breaking reddit'] {
+  font-size: 0;
+}
+
+.res-nightmode .report-action-form,
+.res-nightmode .report-reasons {
+  color: $color-black-1;
+}
+
+.report-action-form .reason-prompt::after {
+  content: 'Please state your report reason. If necessary, message the moderators with further info or evidence.';
+}
+
+.report-action-form li label::after,
+.report-action-form .reason-prompt::after {
+  font-size: 12px;
+}
+
+.report-reasons li.report-reason::after {
+  font-size: 10px;
+  line-height: 11px;
+}
+
+.report-action-form li:nth-child(1) label::after,
+.report-reasons li.report-reason[title='spam']::after {
+  content: 'Spam';
+}
+
+.report-action-form li:nth-child(2) label::after,
+.report-reasons li.report-reason[title='vote manipulation']::after {
+  content: 'Low Quality Content';
+}
+
+.report-action-form li:nth-child(3) label::after,
+.report-reasons li.report-reason[title='personal information']::after {
+  content: 'Abusive Behaviour';
+}
+
+.report-action-form li:nth-child(4) label::after,
+.report-reasons li.report-reason[title='sexualizing minors']::after {
+  content: 'Score Spoilers';
+}
+
+.report-action-form li:nth-child(5) label::after,
+.report-reasons li.report-reason[title='breaking reddit']::after {
+  content: 'Not related to the NRL';
+}

@@ -1,0 +1,682 @@
+// scss-lint:disable IdSelector SelectorFormat SelectorDepth NestingDepth
+
+/* Change the word for 'readers' and the currently online */
+.subscribers .word,
+.users-online .word {
+  display: none;
+}
+
+.subscribers {
+  .number {
+    &::before {
+      content: '';
+    }
+
+    &::after {
+      content: ' Cowboys Bandwagoners';
+    }
+  }
+}
+
+.users-online {
+  .number {
+    &::before {
+      content: '';
+    }
+
+    &::after {
+      content: ' Golden point field goals';
+    }
+  }
+}
+
+/* Image */
+.side {
+  width: 315px;
+  margin: 28px 5px 30px auto;
+  padding: 10px !important;
+  border: 0 solid $color-black-1;
+  overflow: hidden;
+
+  a[href='/r/nrl'] {
+    display: block;
+    width: 300px;
+    height: 200px;
+    background: url(%%cowboys%%) no-repeat 0 0;
+  }
+
+  /* Choose Your Flair */
+  .tagline a:first-child + a::before {
+    position: absolute;
+    top: 115px;
+    right: 15px;
+    width: 313px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: 1px solid $color-blue-7;
+    border-radius: 5px;
+    background-image: url(%%submit%%);
+    background-position: 0;
+    color: $color-white-1;
+    font-size: $font-size-sm;
+    font-weight: bold;
+    text-align: center !important;
+    content: 'Support your team, choose some flair!';
+    vertical-align: middle !important;
+    z-index: 9999;
+  }
+
+  .md {
+
+    table {
+      /* Channel 9 and Fox Sports logos in sidebar */
+      td a[href='//#nine'] {
+        display: inline-block;
+        width: 34px;
+        height: 20px;
+        background-color: transparent;
+        background-image: url(%%nine-small%%);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        white-space: nowrap;
+        content: '';
+        vertical-align: middle;
+      }
+
+      td a[href='//#fox'] {
+        display: inline-block;
+        width: 34px;
+        height: 20px;
+        background-color: transparent;
+        background-image: url(%%fox-sports-small%%);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        white-space: nowrap;
+        content: '';
+        vertical-align: middle;
+      }
+
+      td a[href='//#go'] {
+        display: inline-block;
+        width: 34px;
+        height: 20px;
+        background-color: transparent;
+        background-image: url(%%go-small%%);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        white-space: nowrap;
+        content: '';
+        vertical-align: middle;
+      }
+
+      td,
+      th {
+        height: 20px;
+      }
+
+      thead tr th {
+        border: 0;
+        text-align: center;
+      }
+
+      tbody,
+      thead {
+        border: $color-grey-light-4 1px solid !important;
+      }
+
+      tbody tr {
+        border: $color-grey-light-4 1px solid !important;
+      }
+
+      tbody td {
+        border: $color-grey-mid-2 0 solid !important;
+      }
+
+      a[href='http://www.reddit.com/r/BrisbaneBroncos'],
+      a[href='http://www.reddit.com/r/NRLRaiders'],
+      a[href='http://www.reddit.com/r/CanterburyBulldogs'],
+      a[href='http://www.reddit.com/r/CronullaSharks'],
+      a[href='http://www.reddit.com/r/GoldCoastTitans'],
+      a[href='http://www.reddit.com/r/seaeagles'],
+      a[href='http://www.reddit.com/r/melbournestorm'],
+      a[href='http://www.reddit.com/r/NewcastleKnights'],
+      a[href='http://www.reddit.com/r/NRLcowboys'],
+      a[href^='http://www.reddit.com/r/parramattaeels'],
+      a[href='http://www.reddit.com/r/NRLPanthers'],
+      a[href='http://www.reddit.com/r/rabbitohs'],
+      a[href='http://www.reddit.com/r/NRLdragons'],
+      a[href='http://www.reddit.com/r/SydneyRoosters'],
+      a[href='http://www.reddit.com/r/NrlWarriors'],
+      a[href='http://www.reddit.com/r/weststigers'] {
+        display: inline-block;
+        width: 86px;
+        height: 20px;
+        padding: 0;
+        border-width: 0;
+        background-color: transparent;
+        background-image: url(%%ladder%%);
+        background-repeat: no-repeat;
+        font-size: 0;
+        line-height: normal;
+        vertical-align: middle;
+      }
+
+      a[href='http://www.reddit.com/r/BrisbaneBroncos'] {
+        background-position: 0 0;
+      }
+
+      a[href='http://www.reddit.com/r/NRLRaiders'] {
+        background-position: 0 -20px;
+      }
+
+      a[href='http://www.reddit.com/r/CanterburyBulldogs'] {
+        background-position: 0 -40px;
+      }
+
+      a[href='http://www.reddit.com/r/CronullaSharks'] {
+        background-position: 0 -60px;
+      }
+
+      a[href='http://www.reddit.com/r/GoldCoastTitans'] {
+        background-position: 0 -80px;
+      }
+
+      a[href='http://www.reddit.com/r/seaeagles'] {
+        background-position: 0 -100px;
+      }
+
+      a[href='http://www.reddit.com/r/melbournestorm'] {
+        background-position: 0 -120px;
+      }
+
+      a[href='http://www.reddit.com/r/NewcastleKnights'] {
+        background-position: 0 -140px;
+      }
+
+      a[href='http://www.reddit.com/r/NRLcowboys'] {
+        background-position: 0 -160px;
+      }
+
+      a[href='http://www.reddit.com/r/parramattaeels'] {
+        background-position: 0 -180px;
+      }
+
+      a[href='http://www.reddit.com/r/NRLPanthers'] {
+        background-position: 0 -200px;
+      }
+
+      a[href='http://www.reddit.com/r/rabbitohs'] {
+        background-position: 0 -220px;
+      }
+
+      a[href='http://www.reddit.com/r/NRLdragons'] {
+        background-position: 0 -240px;
+      }
+
+      a[href='http://www.reddit.com/r/SydneyRoosters'] {
+        background-position: 0 -260px;
+      }
+
+      a[href='http://www.reddit.com/r/NrlWarriors'] {
+        background-position: 0 -280px;
+      }
+
+      a[href='http://www.reddit.com/r/weststigers'] {
+        background-position: 0 -300px;
+      }
+
+      /* Sidebar Fixtures */
+      &:nth-of-type(1) tbody tr {
+        &:nth-child(-n+9) {
+          height: 35px;
+          background-color: $color-grey-light-7;
+        }
+
+        &:nth-child(-n+5) {
+          background-color: $color-grey-light-8;
+        }
+
+        &:nth-child(-n+3) {
+          background-color: $color-grey-light-7;
+        }
+
+        &:nth-child(-n+1) {
+          background-color: $color-grey-light-8;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+/* Subreddit Title */
+h1.redditname {
+  a {
+    font-family: $font-family-primary;
+    font-size: 0;
+
+    &::before {
+      font-size: $font-size-default;
+      text-align: center;
+      content: 'National Rugby League';
+    }
+  }
+}
+
+/* Margins for sidebar and links to allow for the Useful Links bar at the top */
+body div.content {
+  margin: 26px 20px 0 !important;
+  padding: 20px 0 !important;
+}
+
+.commentarea {
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: 20px;
+  padding: 7px 2px 0 5px !important;
+}
+
+.linklisting {
+  bottom: 0;
+  margin-top: 0;
+  margin-left: 5px;
+  padding: 0 !important;
+  border: 0 solid $color-black-1;
+
+  &.odd, &.even {
+    min-height: 50px !important;
+    margin: 0 !important;
+    padding: 5px 5px 10px 10px !important;
+    overflow: hidden !important;
+  }
+}
+
+/* 'Useful Links' */
+.usertext-body .md h5 + ul {
+  display: block;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  a {
+    color: $color-blue-6;
+
+    &:hover {
+      color: $color-black-3;
+    }
+  }
+
+  li {
+    display: block;
+    margin: 0 340px 0 40px;
+    white-space: nowrap;
+    overflow: hidden;
+
+    strong {
+      display: inline-block;
+      margin: 11px 3px 11px 10px;
+      float: left;
+    }
+
+    ul {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      li {
+        display: inline-block;
+        margin: 11px 0;
+        border-bottom: 0;
+        white-space: nowrap;
+
+        &::after {
+          display: inline-block;
+          margin: -1px 4px 0 5px;
+          color: $color-grey-dark-3;
+          content: '|';
+        }
+
+        &:last-of-type::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+
+/* Club Logos in text posts and tables in Sidebar */
+#siteTable a[href^='//#'],
+.md table a[href^='//#'] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border-width: 0;
+  background-color: transparent;
+  background-image: url(%%nrl-header-logos%%);
+  background-repeat: no-repeat;
+  line-height: normal;
+  cursor: default;
+  vertical-align: middle;
+}
+
+#siteTable .comment a[href^='//#'] {
+  display: none !important;
+}
+
+#siteTable.sitetable.linklisting .usertext-body .md span.keyNavAnnotation {
+  display: none;
+}
+
+a[href^='//#'] {
+  background-position: -999px -999px;
+}
+
+a[href^='//#bri'] {
+  background-position: 0 0;
+}
+
+a[href^='//#bul'] {
+  background-position: 0 -20px;
+}
+
+a[href^='//#nql'] {
+  background-position: 0 -40px;
+}
+
+a[href^='//#sgi'] {
+  background-position: 0 -60px;
+}
+
+a[href^='//#par'] {
+  background-position: 0 -80px;
+}
+
+a[href^='//#new'] {
+  background-position: 0 -100px;
+}
+
+a[href^='//#pen'] {
+  background-position: 0 -120px;
+}
+
+a[href^='//#sou'] {
+  background-position: 0 -140px;
+}
+
+a[href^='//#can'] {
+  background-position: 0 -160px;
+}
+
+a[href^='//#syd'] {
+  background-position: 0 -180px;
+}
+
+a[href^='//#man'] {
+  background-position: 0 -200px;
+}
+
+a[href^='//#cro'] {
+  background-position: 0 -220px;
+}
+
+a[href^='//#mel'] {
+  background-position: 0 -240px;
+}
+
+a[href^='//#wst'] {
+  background-position: 0 -260px;
+}
+
+a[href^='//#gld'] {
+  background-position: 0 -280px;
+}
+
+a[href^='//#war'] {
+  background-position: 0 -300px;
+}
+
+a[href^='//#nsw'] {
+  background-position: 0 -320px;
+}
+
+a[href^='//#qld'] {
+  background-position: 0 -340px;
+}
+
+a[href^='//#cty'] {
+  background-position: 0 -360px;
+}
+
+a[href^='//#cry'] {
+  background-position: 0 -380px;
+}
+
+a[href^='//#aus'] {
+  background-position: 0 -400px;
+}
+
+a[href^='//#nzk'] {
+  background-position: 0 -420px;
+}
+
+a[href^='//#eng'] {
+  background-position: 0 -440px;
+}
+
+a[href^='//#wal'] {
+  background-position: 0 -460px;
+}
+
+a[href^='//#fij'] {
+  background-position: 0 -480px;
+}
+
+a[href^='//#ire'] {
+  background-position: 0 -500px;
+}
+
+a[href^='//#sco'] {
+  background-position: 0 -520px;
+}
+
+a[href^='//#ita'] {
+  background-position: 0 -540px;
+}
+
+a[href^='//#fra'] {
+  background-position: 0 -560px;
+}
+
+a[href^='//#png'] {
+  background-position: 0 -580px;
+}
+
+a[href^='//#sam'] {
+  background-position: 0 -600px;
+}
+
+a[href^='//#tng'] {
+  background-position: 0 -620px;
+}
+
+a[href^='//#usa'] {
+  background-position: 0 -640px;
+}
+
+a[href^='//#cki'] {
+  background-position: 0 -660px;
+}
+
+a[href^='//#nas'] {
+  background-position: 0 -680px;
+}
+
+a[href^='//#ias'] {
+  background-position: 0 -700px;
+}
+
+a[href^='//#est'] {
+  background-position: 0 -720px;
+}
+
+a[href^='//#ewa'] {
+  background-position: 0 -740px;
+}
+
+a[href^='//#ewi'] {
+  background-position: 0 -760px;
+}
+
+a[href^='//#mal'] {
+  background-position: 0 -780px;
+}
+
+a[href^='//#leb'] {
+  background-position: 0 -800px;
+}
+
+a[href^='//#cnd'] {
+  background-position: 0 -820px;
+}
+
+/* Sidebar Ladder and Fixture */
+.titlebox {
+  margin-top: -8px;
+  padding: 6px;
+  border: 1px $color-grey-light-6 solid;
+  border-radius: 3px;
+  background-color: $color-white-4;
+  font-family: $font-family-primary;
+
+  table {
+    width: 93%;
+
+    tbody tr:nth-child(-n+16) {
+      background-color: $color-white-1;
+    }
+
+    tbody tr:nth-child(-n+8) {
+      background-color: $color-grey-light-7;
+    }
+
+    tbody tr:nth-child(-n+4) {
+      background-color: $color-grey-light-2;
+    }
+
+    thead tr:nth-child(n) {
+      border: 0;
+      background-image: url(%%table-bg%%);
+      color: $color-white-1;
+      text-align: center;
+    }
+  }
+
+  form.toggle,
+  div.leavemoderator {
+    background: none;
+  }
+
+}
+
+.spacer .content a {
+  background: none;
+}
+
+.sidebox.submit {
+  margin-top: -8px;
+}
+
+.infobar,
+.spacer .content {
+  border: 1px solid $color-grey-light-6;
+  border-radius: 3px;
+  background-color: $color-white-4;
+  letter-spacing: 0;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='url'] {
+  border: $color-grey-light-6 1px solid !important;
+  border-radius: 3px !important;
+  background-color: $color-white-4 !important;
+}
+
+.side form#search input[name='q'],
+#search input[type='text'],
+.roundfield-content input[type='text'],
+.roundfield-content textarea {
+  width: 310px;
+  margin-bottom: 1px;
+  padding: 6px 0 6px 3px;
+  border: 1px solid $color-grey-light-2;
+  border-radius: 3px;
+  font-size: $font-size-sm;
+}
+
+/* Submit Links */
+.submit {
+  .morelink {
+    height: 30px;
+    padding: 2px;
+    border: 1px solid $color-grey-light-6;
+    border-radius: 5px;
+    background-color: $color-white-4;
+    background-image: url(%%submit%%);
+    background-position: 0;
+    color: $color-green-2;
+    letter-spacing: 0;
+    line-height: 30px;
+    overflow: hidden;
+
+    &:hover {
+      height: 30px;
+      border: 1px solid $color-grey-light-6;
+      border-radius: 3px;
+      background-color: $color-white-6;
+      color: $color-green-2;
+      letter-spacing: 0;
+      line-height: 30px;
+      overflow: hidden;
+    }
+
+    div {
+      border: 0;
+      background: none;
+
+      &:hover {
+        border: 0;
+        background: none;
+      }
+    }
+
+    a {
+      color: $color-white-1;
+      font-family: $font-family-primary;
+      font-weight: bold;
+
+      &:hover {
+        color: $color-yellow-5;
+        font-family: $font-family-primary;
+      }
+    }
+
+    .nub {
+      width: 0;
+      height: 0;
+      border: 0 solid $color-purple-2;
+    }
+
+  }
+}
+
+// scss-lint:enable IdSelector SelectorFormat NestingDepth

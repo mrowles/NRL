@@ -1,0 +1,171 @@
+// scss-lint:disable IdSelector
+/* Header image */
+div#header {
+  width: 100%;
+  border-bottom: 1px solid $color-black-2 !important;
+  background: $color-grey-light url(%%header%%) !important;
+  background-repeat: repeat-x !important;
+  background-position: 0 18px !important;
+  vertical-align: bottom !important;
+}
+
+/* The crude r/NRL picture */
+#header-bottom-left {
+
+  /* Moving the Hot, New tabs across */
+  .redditname {
+    margin-top: 0;
+    margin-left: 111px;
+    vertical-align: bottom;
+
+    a {
+      display: block !important;
+      position: absolute !important;
+      bottom: 1px !important;
+      left: 70px !important;
+      width: 112px !important;
+      height: 33px !important;
+      background-image: url(%%r-nrl%%) !important;
+      background-position: 0 0 !important;
+      text-indent: -9999px !important;
+    }
+  }
+}
+
+/* Getting the correct height for the header */
+#header-img {
+  width: 65px !important;
+  height: 122px !important;
+  vertical-align: bottom !important;
+}
+
+#header-img-a img {
+  margin: 5px !important;
+}
+
+.titlebox {
+  .usertext-body {
+    .md {
+
+      /* Logo header base */
+      h6 {
+        display: block;
+        position: absolute;
+        top: 22px;
+        left: 72px;
+        width: 500px;
+        height: 20px;
+        margin: 6px;
+        color: $color-grey-light-3;
+        line-height: 20px;
+        z-index: 100;
+
+      }
+
+      a {
+        margin-right: 2px;
+      }
+    }
+  }
+
+  /* Team specific header images */
+  a[href='/r/NSWBlues'],
+  a[href='/r/Maroons'],
+  a[href='/r/BrisbaneBroncos'],
+  a[href='/r/CanterburyBulldogs'],
+  a[href='/r/NRLRaiders'],
+  a[href='/r/NRLcowboys'],
+  a[href='/r/GoldCoastTitans'],
+  a[href='/r/seaeagles'],
+  a[href='/r/melbournestorm'],
+  a[href='/r/NewcastleKnights'],
+  a[href='/r/parramattaeels'],
+  a[href='/r/NRLPanthers'],
+  a[href='/r/CronullaSharks'],
+  a[href='/r/rabbitohs'],
+  a[href='/r/NRLdragons'],
+  a[href='/r/SydneyRoosters'],
+  a[href='/r/NRLwarriors'],
+  a[href='/r/weststigers'] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(%%nrl-header-logos%%);
+    background-repeat: no-repeat;
+  }
+
+  a[href='/r/NSWBlues'] {
+    background-position: 0 -320px;
+  }
+
+  a[href='/r/Maroons'] {
+    margin-right: 3px;
+    margin-left: -3px;
+    background-position: 0 -340px;
+  }
+
+  a[href='/r/BrisbaneBroncos'] {
+    background-position: 0 0;
+  }
+
+  a[href='/r/CanterburyBulldogs'] {
+    background-position: 0 -20px;
+  }
+
+  a[href='/r/NRLRaiders'] {
+    background-position: 0 -160px;
+  }
+
+  a[href='/r/NRLcowboys'] {
+    background-position: 0 -40px;
+  }
+
+  a[href='/r/GoldCoastTitans'] {
+    background-position: 0 -280px;
+  }
+
+  a[href='/r/seaeagles'] {
+    background-position: 0 -200px;
+  }
+
+  a[href='/r/melbournestorm'] {
+    background-position: 0 -240px;
+  }
+
+  a[href='/r/NewcastleKnights/'] {
+    background-position: 0 -100px;
+  }
+
+  a[href='/r/parramattaeels'] {
+    background-position: 0 -80px;
+  }
+
+  a[href='/r/NRLPanthers'] {
+    background-position: 0 -120px;
+  }
+
+  a[href='/r/CronullaSharks'] {
+    background-position: 0 -220px;
+  }
+
+  a[href='/r/rabbitohs'] {
+    background-position: 0 -140px;
+  }
+
+  a[href='/r/NRLdragons'] {
+    background-position: 0 -60px;
+  }
+
+  a[href='/r/SydneyRoosters'] {
+    background-position: 0 -180px;
+  }
+
+  a[href='/r/NRLwarriors'] {
+    background-position: 0 -300px;
+  }
+
+  a[href='/r/weststigers'] {
+    background-position: 0 -260px;
+  }
+}
+// scss-lint:enable IdSelector
