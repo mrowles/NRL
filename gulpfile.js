@@ -23,7 +23,7 @@ gulp.task('eslint', function () {
 });
 
 gulp.task('scsslint', function () {
-  return gulp.src(options.src + '/**/*.scss')
+  return gulp.src(options.src + '/*.scss')
     .pipe($.scssLint({
       'config': '.scss_lint.yml'
     }))
